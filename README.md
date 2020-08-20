@@ -3,7 +3,7 @@
 ![MERN](https://raw.githubusercontent.com/Henry-Cook/Eleventh-Hour-Rescue-Redesign/feature/readme/assets/mern-img.png)
 
 ## Project Overview
-Collaboratve full-stack redesign of a local nonprofit's website between General Assembly SEI and UX fellows.
+Collaboratve full-stack redesign of a local [nonprofit's](https://www.ehrdogs.org/) website between General Assembly SEI and UX fellows.
 
 ## Team Documents
 
