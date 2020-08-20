@@ -1,17 +1,15 @@
 # Eleventh Hour Rescue (Redesign)
 
-![MERN](https://geeksperhour.com/wp-content/uploads/2019/02/mern-img.png)
+![MERN](https://raw.githubusercontent.com/Henry-Cook/Eleventh-Hour-Rescue-Redesign/feature/readme/assets/mern-img.png)
 
 ## Project Overview
 Collaboratve full-stack redesign of a local nonprofit's website between General Assembly SEI and UX fellows.
 
-## Dataflow and Layout
+## Team Documents
 
-[text link](https://whimsical.com/LjJ2NeDioewmL2MvciYwsB)
+[Dataflow](https://whimsical.com/LjJ2NeDioewmL2MvciYwsB)
 
-## Team Expectations
-
-[text link](https://docs.google.com/document/d/1fVny92CdTiep-hjwiTzCODf-YCM_jhu9lDEkqwpcJwg/edit?usp=sharing)
+[Team Expectations](https://docs.google.com/document/d/1fVny92CdTiep-hjwiTzCODf-YCM_jhu9lDEkqwpcJwg/edit?usp=sharing)
 
 ## MongoDB Schema
 
