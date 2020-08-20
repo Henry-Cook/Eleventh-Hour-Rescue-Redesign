@@ -1,8 +1,11 @@
 <h1 align="center"> Eleventh Hour Rescue (Redesign)</h1>
 
+<p align="center">
+<img src="https://media.discordapp.net/attachments/447199538105810945/746067493809946705/screen_shot_2020-08-20_at_2.png">  </img>
+</p>
 
-![Beesss](https://media.discordapp.net/attachments/447199538105810945/746067493809946705/screen_shot_2020-08-20_at_2.png)
 ![Bees](https://media.giphy.com/media/QBYeMohXoVUJBtlfFD/giphy.gif)
+
 
 
 ## Project Overview
