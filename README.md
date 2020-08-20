@@ -1,4 +1,4 @@
-# Eleventh Hour Rescue (Redesign)
+<h1 align="center"> Eleventh Hour Rescue (Redesign)</h1>
 
 
 ![Beesss](https://media.discordapp.net/attachments/447199538105810945/746067493809946705/screen_shot_2020-08-20_at_2.png)
