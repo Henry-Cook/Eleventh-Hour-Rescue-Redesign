@@ -9,8 +9,8 @@ import { homeCards } from "../../utils/cards.js";
 export default function Home() {
   return (
     <Layout>
-
       <div className="home">
+
         <img src={homedogs} alt="dogs" id="homedogs" />
         <div className="welcome-message">
           <h1>Welcome</h1>
@@ -23,13 +23,12 @@ export default function Home() {
         </div>
 
         <div className="cards-container">
-          {homeCards.map((card) => {
-            return <ActionCard action={card.action} image={card.image} />;
+          {homeCards.map((card, i) => {
+            return <ActionCard id={i} action={card.action} image={card.image} />;
           })}
         </div>
 
       </div>
-
     </Layout>
   );
 }
