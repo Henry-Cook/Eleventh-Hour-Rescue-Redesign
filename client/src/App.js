@@ -5,7 +5,6 @@ import Home from './screens/home/Home.jsx';
 import AboutUs from './screens/donate/Donate.jsx';
 import Donate from './screens/donate/Donate.jsx';
 import NotFound from './screens/notFound/NotFound.jsx';
-import logo from './logo.svg';
 import './App.css';
 
 
