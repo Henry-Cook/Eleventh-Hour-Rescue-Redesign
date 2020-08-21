@@ -4,6 +4,7 @@ import "./layout.css"
 
 const Layout = (props) => {
 
+
   return (
     <div className="layout">
       
@@ -17,6 +18,7 @@ const Layout = (props) => {
       
     </div>
   );
+
 }
 
 export default Layout;
