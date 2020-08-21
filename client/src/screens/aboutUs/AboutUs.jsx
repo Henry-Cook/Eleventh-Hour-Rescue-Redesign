@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import Layout from '../../components/layout/Layout.jsx'
 import { getStories } from "../../controllers/storyController"
@@ -54,4 +55,5 @@ export default function AboutUs(props) {
         </Layout>
     </>
   );
+
 }
