@@ -1,7 +1,6 @@
-
 import React from 'react';
 
-export default About = () => {
+export default function AboutUs () {
   return (
     <h1>Butt</h1>
   )
