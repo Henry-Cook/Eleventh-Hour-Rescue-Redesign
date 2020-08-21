@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./screens/home/Home.jsx";
-import AboutUs from "./screens/donate/Donate.jsx";
+import AboutUs from "./screens/aboutUs/AboutUs";
 import Donate from "./screens/donate/Donate.jsx";
 import NotFound from "./screens/notFound/NotFound.jsx";
 import "./App.css";

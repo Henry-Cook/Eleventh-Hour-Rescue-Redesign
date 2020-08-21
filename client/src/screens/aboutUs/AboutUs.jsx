@@ -1,9 +1,5 @@
+import React from "react";
 
-import React from 'react';
-
-
-export default About() => {
-  return (
-    <h1>Butt</h1>
-  )
+export default function AboutUs() {
+  return <h1>Butt</h1>;
 }
