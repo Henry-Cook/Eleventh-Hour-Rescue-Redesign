@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
 
-.layout-children {
-  margin-top: 184px;
-}
-
-footer h4 {
-  text-align: center;
+.not-found {
+  display: inline;
   font-family: 'Assistant', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
+  font-size: 52px;
 }
