@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
 import Layout from "../../components/layout/Layout.jsx";
-// import { getStories } from "../../controllers/storyController"
 
 //Will probably need to pass props for the locations later?
 export default function AboutUs(props) {
