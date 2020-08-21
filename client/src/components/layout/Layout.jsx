@@ -5,13 +5,17 @@ import "./layout.css"
 const Layout = (props) => {
 
   return (
-  <div className="layout">
-    <Nav />
-    <div className="layout-children">{props.children}</div>
-    <footer>
-      <h4>© 2020 EHR. All rights reserved.</h4>
-    </footer>
-  </div>
+    <div className="layout">
+      
+      <Nav />
+
+      <div className="layout-children">{props.children}</div>
+
+      <footer>
+        <h4>© 2020 EHR. All rights reserved.</h4>
+      </footer>
+      
+    </div>
   );
 }
 
