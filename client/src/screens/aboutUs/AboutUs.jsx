@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from "react";
 import Layout from '../../components/layout/Layout.jsx'
-import { getStories } from "../../controllers/storyController"
+import { getStories } from "../../services/stories"
+
 
 //Will probably need to pass props for the locations later?
 export default function AboutUs(props) {
-  const [stories, updateStories] = useState([]);
+  const [Stories, updateStories] = useState([]);
 
-  // useEffect(() => {
-  //   const fetchStories = async () => {
-  //     const response = await getStories();
-  //     updateStories(response)
-  //   };
-  //   fetchStories();
-  // }, [])
+
+
+  useEffect(() => {
+    const fetchStories = async () => {
+      const response = await getStories();
+      updateStories(response)
+    };
+    fetchStories();
+  }, [])
 
   return (
     <>
@@ -40,16 +43,24 @@ export default function AboutUs(props) {
       </div>
       <div className="stories">
         <h4>ADOPTION STORIES</h4>
-        {stories.map((story) => {
+          {Stories.map((story) => {
+          console.log(Stories)
           return (
-            <>
-              <img src='{story.imgURL}' alt='Israel' />
+            <div className='adoption-stories'>
+              <img src={story.imgURL} alt='doggo' />
               <h5>{story.name}</h5>
               <p>{story.story}</p>
-              </>
+              </div>
           )
           
         })}
+          <div className='leadership'>
+            <h4>LEADERSHIP</h4>
+          </div>
+          <div className='locations'>
+            <h4>LOCATIONS</h4>
+            {/* *INSERT LOCATION COMPONENT HERE */}
+          </div>
         </div>
         </Layout>
     </>

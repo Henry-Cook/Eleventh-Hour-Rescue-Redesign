@@ -2,8 +2,8 @@ import axios from 'axios';
 
 let apiUrl;
 
-const apiUrl = {
-  production: '',
+const apiUrls = {
+  // production: '',
   development: 'http://localhost:3000/api'
 }
 
