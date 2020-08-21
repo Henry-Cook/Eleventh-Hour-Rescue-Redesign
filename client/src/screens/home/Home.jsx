@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/layout/Layout.jsx";
 import "./home.css";
 
-import InfoCard from "../../components/info-card/InfoCard";
+import ActionCard from "../../components/action-card/ActionCard";
 import homedogs from "../../assets/images/homedogs.png";
 import { homeCards } from "../../utils/cards.js";
 
@@ -22,9 +22,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="circles-container">
+        <div className="cards-container">
           {homeCards.map((card) => {
-            return <InfoCard action={card.action} image={card.image} />;
+            return <ActionCard action={card.action} image={card.image} />;
           })}
         </div>
 
