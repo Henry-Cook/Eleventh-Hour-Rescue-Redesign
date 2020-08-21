@@ -1,3 +1,4 @@
+import React, {useEffect, useState} from "react";
 import Layout from "../../components/layout/Layout.jsx";
 
 //Will probably need to pass props for the locations later?
