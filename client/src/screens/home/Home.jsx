@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import Layout from "../../components/layout/Layout.jsx";
 import "./home.css";
 
@@ -24,7 +25,11 @@ export default function Home() {
 
         <div className="cards-container">
           {homeCards.map((card, i) => {
-            return <ActionCard id={i} action={card.action} image={card.image} />;
+            return (
+              <Link to={`/${card.action.toLowerCase()}`}>
+                <ActionCard id={i} action={card.action} image={card.image} />
+                </Link>
+            )
           })}
         </div>
 
