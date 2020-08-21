@@ -1,11 +1,8 @@
-import React from 'react'
 
-function export default Home() {
+import React from 'react';
 
+export default About = () => {
   return (
-
-  <h1>you're home homie</h1>
-
+    <h1>Butt</h1>
   )
-
 }
