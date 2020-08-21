@@ -2,7 +2,7 @@
 import React from 'react';
 
 
-export default About() => {
+export default About = () => {
   return (
     <h1>Butt</h1>
   )
