@@ -7,7 +7,7 @@ const db = require("./db/connection");
 
 const PORT = process.env.PORT || 3000;
 
-const app = express;
+const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
