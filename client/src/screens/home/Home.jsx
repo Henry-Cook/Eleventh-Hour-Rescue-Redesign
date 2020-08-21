@@ -1,5 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Home() {
-  <h1>you're home homie</h1>
+  <h1>you're home homie</h1>;
 }
