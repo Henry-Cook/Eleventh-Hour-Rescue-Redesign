@@ -1,11 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+
 header {
+  margin: 0 auto;
+  font-family: 'Assistant', sans-serif;
+  font-weight: bold;
   position: fixed;
   display: flex;
   top: 0;
   background: #00a1f8;
   width: 100%;
-  height: 184px;
+  height: 15vh;
   z-index: 2;
+}
+
+.ehr-name {
+  color: #FFFFFF;
+  font-size: 52px;
+}
+
+nav {
+  display: inline-block;
 }
 
 .navLinks {
@@ -18,7 +32,9 @@ li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
+  font-size:v 19px;
+  padding: .5vw;
 }
 
 nav a:active {
