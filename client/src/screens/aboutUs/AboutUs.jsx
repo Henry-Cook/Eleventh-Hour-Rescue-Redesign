@@ -57,7 +57,7 @@ export default function AboutUs(props) {
           <div className='leadership'>
             <h4>LEADERSHIP</h4>
           </div>
-          <div className='locations'>
+          <div className='Locations'>
             <h4>LOCATIONS</h4>
             {/* *INSERT LOCATION COMPONENT HERE */}
           </div>
