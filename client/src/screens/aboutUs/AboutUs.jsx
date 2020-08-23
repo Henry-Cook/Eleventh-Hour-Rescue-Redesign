@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from '../../components/layout/Layout.jsx'
+import Locations from '../../components/locations/Locations'
 import { getStories } from "../../services/stories"
 
 
@@ -57,9 +58,11 @@ export default function AboutUs(props) {
           <div className='leadership'>
             <h4>LEADERSHIP</h4>
           </div>
-          <div className='Locations'>
+          <div className='locations'>
             <h4>LOCATIONS</h4>
             {/* *INSERT LOCATION COMPONENT HERE */}
+            <Locations /> 
+
           </div>
         </div>
         </Layout>
