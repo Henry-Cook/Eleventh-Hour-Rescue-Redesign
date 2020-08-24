@@ -1,6 +1,10 @@
-.quick-links{
-  text-decoration:none;
-  display:inline-block;
+.quick{
+  color:#000000;
   font-size: 1.36vw;
+}
+
+.quick-links a{
+  text-decoration: none;
+  display: block;
   color: #c4c4c4;
 }
