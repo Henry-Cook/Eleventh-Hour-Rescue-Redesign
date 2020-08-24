@@ -1,6 +1,6 @@
 import api from "./apiConfig";
 
-export const getStories = async () => {
+export const getStories = async id => {
   try {
     const response = await api.get('/stories');
     return response.data
@@ -9,7 +9,7 @@ export const getStories = async () => {
   }
 };
 
-export const getStory = async () => {
+export const getStory = async (id, story)  => {
   try {
     const response = await api.get(`/story/${id}`);
     return response.data;
@@ -27,7 +27,7 @@ export const createStory = async () => {
   }
 }
 
-export const updateStory = async () => {
+export const updateStory = async (id, story) => {
   try {
     const response = await api.put(`/story/${id}`)
     return response.data;
@@ -36,12 +36,12 @@ export const updateStory = async () => {
   }
 }
 
-export const deleteStory = async () => {
+export const deleteStory = async id => {
   try {
     const response = await api.delete(`/story/${id}`)
     return response.data
   } catch (error) {
-    throw error
+    throw error 
   }
 }
 

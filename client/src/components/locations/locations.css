@@ -1,0 +1,13 @@
+.locations-container{
+  display:flex;
+  font-size:16px;
+}
+
+.locations-name{
+  color: #00a1f8;
+}
+
+
+.rockaway, .EHRKennels, .kearney {
+  margin: 0px 30px 0px 30px;
+}
