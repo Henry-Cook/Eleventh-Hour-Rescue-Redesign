@@ -64,8 +64,9 @@ export default function AboutUs(props) {
             <Locations /> 
 
           </div>
+
         </div>
-        </Layout>
+      </Layout>
     </>
   );
 }

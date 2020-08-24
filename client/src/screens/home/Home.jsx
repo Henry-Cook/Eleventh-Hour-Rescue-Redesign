@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../../components/layout/Layout.jsx'
 import './home.css'
 
 import homedogs from '../../assets/images/homedogs.png'
@@ -6,6 +7,7 @@ import homedogs from '../../assets/images/homedogs.png'
 export default function Home() {
   return (
     
+    <Layout>
     <div className="home">
       <img src={homedogs}
         alt="dogs"
@@ -19,7 +21,8 @@ export default function Home() {
         
       </div>
 </div>
-    
+</Layout>    
  
   )
 }
+
