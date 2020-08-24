@@ -1,40 +1,9 @@
 import React, { useState } from "react";
 import "./userInputs.css";
 import states from "./state";
+import addSpace from "../../utils/addSpace";
 
-function UserInputs() {
-  const [userInfo, setUserInfo] = useState({
-    number: "",
-    cvv: "",
-    expiration: "",
-    firstName: "",
-    lastName: "",
-    address: "",
-    address2: "",
-    city: "",
-    zip: "",
-    state: "",
-    email: "",
-  });
-
-  const handleChange = (e) => {
-    setUserInfo({
-      ...userInfo,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const addSpace = (e) => {
-    let input = e.target.value;
-    if (input.length === 4 && e.keyCode !== 8) {
-      e.target.value = `${input} `;
-    } else if (input.length === 9 && e.keyCode !== 8) {
-      e.target.value = `${input} `;
-    } else if (input.length === 14 && e.keyCode !== 8) {
-      e.target.value = `${input} `;
-    }
-  };
-
+function UserInputs(props) {
   return (
     <>
       <div className="form-container">
@@ -52,7 +21,7 @@ function UserInputs() {
           <div className="card-information">
             <input
               className="number"
-              onChange={handleChange}
+              onChange={props.handleChange}
               name="number"
               onKeyDown={addSpace}
               required
@@ -64,16 +33,15 @@ function UserInputs() {
             <div className="card-verify">
               <input
                 className="verify-one"
-                onChange={handleChange}
+                onChange={props.handleChange}
                 name="cvv"
                 type="text"
                 required
-                onChange={handleChange}
                 placeholder="CVV"
               />
               <input
                 className="verify-two"
-                onChange={handleChange}
+                onChange={props.handleChange}
                 name="expiration"
                 type="text"
                 required
@@ -87,7 +55,7 @@ function UserInputs() {
               <div className="card-verify">
                 <input
                   className="verify-one"
-                  onChange={handleChange}
+                  onChange={props.handleChange}
                   type="text"
                   name="firstName"
                   required
@@ -95,7 +63,7 @@ function UserInputs() {
                 />
                 <input
                   className="verify-two"
-                  onChange={handleChange}
+                  onChange={props.handleChange}
                   type="text"
                   name="lastName"
                   required
@@ -105,7 +73,7 @@ function UserInputs() {
               <div className="card-verify">
                 <input
                   className="verify-one"
-                  onChange={handleChange}
+                  onChange={props.handleChange}
                   type="text"
                   name="address"
                   required
@@ -113,7 +81,7 @@ function UserInputs() {
                 />
                 <input
                   className="verify-two"
-                  onChange={handleChange}
+                  onChange={props.handleChange}
                   type="text"
                   name="address2"
                   required
@@ -123,7 +91,7 @@ function UserInputs() {
               <div className="card-verify">
                 <input
                   className="verify-one"
-                  onChange={handleChange}
+                  onChange={props.handleChange}
                   type="text"
                   name="city"
                   required
@@ -131,7 +99,7 @@ function UserInputs() {
                 />
                 <input
                   className="verify-two"
-                  onChange={handleChange}
+                  onChange={props.handleChange}
                   type="text"
                   name="zip"
                   required
@@ -142,7 +110,7 @@ function UserInputs() {
                 <select
                   className="state-select"
                   name="state"
-                  onChange={handleChange}
+                  onChange={props.handleChange}
                   required
                 >
                   <option value="">Select</option>
@@ -155,8 +123,9 @@ function UserInputs() {
                 <input
                   placeholder="Email Address"
                   className="input-email"
-                  onChange={handleChange}
+                  onChange={props.handleChange}
                   type="email"
+                  name="email"
                   required
                 />
               </div>

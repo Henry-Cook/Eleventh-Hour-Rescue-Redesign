@@ -2,53 +2,32 @@ import React, { useState } from "react";
 import "./selector.css";
 
 function Selector(props) {
-  const [choices, setChoices] = useState({
-    type: "",
-    amount: "",
-  });
-  const [tabOneBool, setTabOneBool] = useState(false);
-  const [tabTwoBool, setTabTwoBool] = useState(false);
+  const [tabStyleValue, setTabStyleValue] = useState("monthly");
   const [btnStyleValue, setBtnStyleValue] = useState("");
-
-  // let tabOneBool = false;
-  // let tabTwoBool = false;
-
-  const handleTypeClick = (e) => {
-    console.log(tabOneBool);
-    setChoices({
-      ...choices,
-      type: e.target.value,
-    });
-  };
-
-  const handleAmountClick = (e) => {
-    setChoices({
-      ...choices,
-      amount: e.target.value,
-    });
-  };
 
   return (
     <>
       <div className="selector-container">
         <div className="selector-tabs">
           <button
-            className={tabOneBool === true ? "tab-one" : "tab-one-clicked"}
+            className={
+              tabStyleValue !== "monthly" ? "tab-one" : "tab-one-clicked"
+            }
             onClick={(e) => {
-              setTabOneBool(false);
-              setTabTwoBool(false);
-              handleTypeClick(e);
+              setTabStyleValue("monthly");
+              props.handleTypeClick(e);
             }}
             value="monthly"
           >
             Monthly
           </button>
           <button
-            className={tabOneBool === false ? "tab-two" : "tab-two-clicked"}
+            className={
+              tabStyleValue !== "oneTime" ? "tab-two" : "tab-two-clicked"
+            }
             onClick={(e) => {
-              setTabTwoBool(true);
-              setTabOneBool(true);
-              handleTypeClick(e);
+              setTabStyleValue("oneTime");
+              props.handleTypeClick(e);
             }}
             value="oneTime"
           >
@@ -61,7 +40,7 @@ function Selector(props) {
               className={btnStyleValue === "5" ? "btns-clicked" : "btns"}
               onClick={(e) => {
                 setBtnStyleValue("5");
-                handleAmountClick(e);
+                props.handleAmountClick(e);
               }}
               name="amount"
               value="5"
@@ -72,7 +51,7 @@ function Selector(props) {
               className={btnStyleValue === "10" ? "btns-clicked" : "btns"}
               onClick={(e) => {
                 setBtnStyleValue("10");
-                handleAmountClick(e);
+                props.handleAmountClick(e);
               }}
               name="amount"
               value="10"
@@ -83,7 +62,7 @@ function Selector(props) {
               className={btnStyleValue === "25" ? "btns-clicked" : "btns"}
               onClick={(e) => {
                 setBtnStyleValue("25");
-                handleAmountClick(e);
+                props.handleAmountClick(e);
               }}
               name="amount"
               value="25"
@@ -94,7 +73,7 @@ function Selector(props) {
               className={btnStyleValue === "50" ? "btns-clicked" : "btns"}
               onClick={(e) => {
                 setBtnStyleValue("50");
-                handleAmountClick(e);
+                props.handleAmountClick(e);
               }}
               name="amount"
               value="50"
@@ -105,7 +84,7 @@ function Selector(props) {
               className={btnStyleValue === "100" ? "btns-clicked" : "btns"}
               onClick={(e) => {
                 setBtnStyleValue("100");
-                handleAmountClick(e);
+                props.handleAmountClick(e);
               }}
               name="amount"
               value="100"
@@ -116,7 +95,7 @@ function Selector(props) {
               className={btnStyleValue === "other" ? "btns-clicked" : "btns"}
               onClick={(e) => {
                 setBtnStyleValue("other");
-                handleAmountClick(e);
+                props.handleAmountClick(e);
               }}
               name="amount"
               value="other"

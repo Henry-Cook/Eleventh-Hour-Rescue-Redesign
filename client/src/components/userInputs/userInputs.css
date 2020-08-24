@@ -180,4 +180,12 @@
   font-weight: 700;
   color: #fffdfd;
   border: none;
+  transition: ease-out 0.1s;
+}
+
+.donate-btn:hover {
+  background-color: #1aa9f6;
+}
+.donate-btn:focus {
+  transform: scale(0.95);
 }
