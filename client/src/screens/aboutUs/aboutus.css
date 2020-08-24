@@ -1,8 +1,34 @@
-.mission-text{
-  text-align:left;
-  display:grid;
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 57vw 15vw;
+  grid-gap: 3vw;
+  font-family: 'Assistant', sans-serif;
+}
+.quick-links {
+  grid-column: 2;
+  grid-row: 1;
 }
 
-.aboutus{
-  text-align:center;
+.everything {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.mission-text {
+  text-align: left;
+}
+
+.aboutus {
+  text-align: center;
+  font-size: 2.64vw;
+}
+h4 {
+  font-size: 1.36vw;
+}
+p {
+  font-size: 1.2vw;
 }

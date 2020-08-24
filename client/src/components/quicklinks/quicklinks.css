@@ -1,17 +1,6 @@
-.quick{
-  display:flex;
-  flex-direction:row-reverse;
-  flex: 0 0 260px;
-  /* display:grid;
-  grid-template-columns: 5fr 1fr;
-  grid-template-rows: 20% 20% 20% 20% 20%; */
-
-}
-
 .quick-links{
   text-decoration:none;
-  /* display:flex; */
-  flex-direction:column;
-  order:-1;
   display:inline-block;
+  font-size: 1.36vw;
+  color: #c4c4c4;
 }
