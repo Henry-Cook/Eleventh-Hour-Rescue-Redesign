@@ -7,13 +7,13 @@
   grid-template-rows: .5fr .2fr .5fr;
   height: 100%;
   justify-content: center;
+  margin-bottom: 9vh;
 }
 
 #homedogs {
   object-fit: cover;
   width: 100%;
-  min-width: 424px;
-  max-height: 691px;
+  max-width: 100vw;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: -1;
@@ -29,45 +29,44 @@
   grid-column-end: -1;
   grid-row-start: 2;
   grid-row-end: 3;
-  width: 100%;
-  min-width: 324px;
-  
+  justify-content: center;
 }
 
 .welcome-message h1, p {
+  display: flex;
   text-align: center;
 }
 
 .welcome-message h1 {
   margin: 0;
   color: #00a1f8;
-  font-size: 2.5em;
+  font-size: 52px;
   padding: 15px 0 5px 0;
   font-weight: 700;
 }
 
 .welcome-message p {
   margin: 0;
-  padding: 0 35px;
-  font-size: 1.2em;
+  padding: 2vh 5vw 4vh 5vw;
+  font-size: 24px;
 }
 
 .cards-container {
-  margin: 40px 0;
-  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 1;
-  grid-column-end: -1;
+  grid-column-end: 3;
   display: flex;
-  justify-content: center;
+  max-width: 100%;
   box-sizing: border-box;
+  margin-top: 3vh;
+  align-items: center;
 }
-
 .cards-container a {
+  padding: 20;
   text-align: center;
   text-decoration: none;
   color: #00a1f8;
   font-weight: bold;
-  font-size: .7em;
 }
 
 .cards-container a:hover {
