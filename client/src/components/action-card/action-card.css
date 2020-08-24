@@ -1,0 +1,28 @@
+
+.action-card {
+
+  padding: 15px;
+}
+
+.action-card img {
+  width: 100%;
+  max-width: 214px;
+  min-width: 114px;
+}
+
+.action-card #0 {
+grid-column-start: 1;
+grid-column-end: 2;
+}
+.action-card #1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.action-card #2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.action-card #3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
