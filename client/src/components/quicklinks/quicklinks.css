@@ -1,6 +1,7 @@
 .quick{
   color:#000000;
   font-size: 1.36vw;
+  position: fixed;
 }
 
 .quick-links a{
