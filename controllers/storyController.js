@@ -26,6 +26,19 @@ const getStory = async (req, res) => {
   }
 };
 
+const getDonation = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const donation = await Donation.findById(id);
+    if (donation) {
+      return res.json(donation);
+    }
+    res.status(404).json({ message: "not found" });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 const createDonation = async (req, res) => {
   try {
     const donation = await new Donation(req.body);
@@ -66,6 +79,7 @@ const deleteDonation = async (req, res) => {
 module.exports = {
   getStories,
   getStory,
+  getDonation,
   createDonation,
   updateStory,
   deleteDonation,

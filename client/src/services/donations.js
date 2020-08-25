@@ -1,13 +1,14 @@
 import api from "./apiConfig";
-import updateSelection from "../components/form/Form";
-// export const getStory = async (id, story)  => {
-//   try {
-//     const response = await api.get(`/story/${id}`);
-//     return response.data;
-//   } catch (error) {
-//     throw error;
-//   }
-// }
+
+export const getDonation = async (id) => {
+  console.log("We made it to donations");
+  try {
+    const response = await api.get(`/donation/${id}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
 
 export const createDonation = async (donation) => {
   try {
@@ -18,11 +19,11 @@ export const createDonation = async (donation) => {
   }
 };
 
-// export const deleteStory = async (id) => {
-//   try {
-//     const response = await api.delete(`/story/${id}`);
-//     return response.data;
-//   } catch (error) {
-//     throw error;
-//   }
-// };
+export const deleteDonation = async (id) => {
+  try {
+    const response = await api.delete(`/donation/${id}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};

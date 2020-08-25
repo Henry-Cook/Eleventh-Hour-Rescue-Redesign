@@ -4,9 +4,8 @@ import Home from "./screens/home/Home.jsx";
 import AboutUs from "./screens/aboutUs/AboutUs";
 import Donate from "./screens/donate/Donate.jsx";
 import NotFound from "./screens/notFound/NotFound.jsx";
+import Confirmation from "./screens/confirmation/Confirmation";
 import "./App.css";
-
-
 
 function App() {
   return (
@@ -16,6 +15,7 @@ function App() {
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/donate" component={Donate} />
         <Route exact path="/404" component={NotFound} />
+        <Route exact path="/confirmation/:id" component={Confirmation} />
       </Switch>
     </div>
   );
