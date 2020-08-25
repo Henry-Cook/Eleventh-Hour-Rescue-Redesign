@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import Form from "../../components/form/Form";
 import "./donate.css";
 import Layout from "../../components/layout/Layout";
 import imgSrc from "../../assets/images/DonateDesktop-Header.png";
 
 function Donate() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Layout>
