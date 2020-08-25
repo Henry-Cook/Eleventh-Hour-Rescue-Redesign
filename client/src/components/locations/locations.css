@@ -3,8 +3,15 @@
   font-size: 1.2vw;
   width: 57vw;
 }
+p{
+  text-align:left;
+}
 
 .locations-name{
+  color: #00a1f8;
+  margin: 0 0;
+}
+.appt{
   color: #00a1f8;
 }
 

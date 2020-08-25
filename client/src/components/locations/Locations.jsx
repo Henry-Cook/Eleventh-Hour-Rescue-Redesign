@@ -6,68 +6,93 @@ export default function Locations() {
     <div className="locations-container">
       <div className="rockaway">
         <h4 className="locations-name">ROCKAWAY MALL</h4>
-        <p>
+        <span>
           301 Mt Hope Ave
           <br />
           Rockaway, NJ
-        </p>
+        </span>
+        <br />
+        <br/>
 
-          <span><strong>Mon-Sat</strong> 10am-9:30pm</span>
-          <br /><br/>
-          <span><strong>Sun</strong> 11am-6pm</span>
+        <span>
+          <strong>Mon-Sat</strong> 10am-9:30pm
+        </span>
 
-        <p>
+        <span>
+          <strong>Sun</strong> 11am-6pm
+        </span>
+        <br />
+        <br/>
+        <span>
           973-970-0371
-          <br />
+           </span>
+        <span>
           RockawayMallEHR@gmail.com
-        </p>
+        </span>
       </div>
 
       <div className="EHRKennels">
         <h4 className="locations-name">
-          EHR KENNELS <br />
-          (By appointment only.
+          EHR KENNELS
+        </h4>
+        <span className='appt'>
+        (By appointment only.
           <br />
           Not open to the public.)
-        </h4>
-        <p>
+        </span>
+        <span>
           861 Rt 10 East
           <br />
           Randolph,NJ
-        </p>
-        <p>
-          973-664-0865
-          <br />
+        </span>
+        <br />
+        <br />
+
+        <span>973-664-0865</span>
+        <span>
           <strong>(voicemail only)</strong>
-          <br />
-          MainOffice@EHRdogs.org
-        </p>
+        </span>
+        <span>MainOffice@EHRdogs.org</span>
       </div>
 
       <div className="kearney">
         <h4 className="locations-name">KEARNEY PETSMART</h4>
-        <p>
+        <span>
           160 Passaic Ave.
           <br />
           Kearny, NJ
+        </span>
+        <br />
+        <br />
+        <span>
+          <strong>Mon-Sat</strong> 9am-9pm
+        </span>
+        <span>
+          <strong>Sun</strong> 10am-7pm
+        </span>
+        <p>
+          <strong>No direct phone</strong>
         </p>
-          <span><strong>Mon-Sat</strong> 9am-9pm</span>
-          <br />
-          <span><strong>Sun</strong> 10am-7pm</span>
-        <p><strong>No direct phone</strong></p>
       </div>
 
       <div className="roxbury">
         <h4 className="locations-name">ROXBURY MALL</h4>
-        <p>
+        <span>
           275 Rt 10 East
           <br />
           Succasunna,NJ
+        </span>
+        <br />
+        <br/>
+        <span>
+          <strong>Sat</strong>11am-4pm
+        </span>
+        <span>
+          <strong>Sun</strong> 11am-4pm
+        </span>
+        <p>
+          <strong>No direct phone</strong>
         </p>
-          <span><strong>Sat</strong>11am-4pm</span>
-          <br />
-          <span><strong>Sun</strong> 11am-4pm</span>
-        <p><strong>No direct phone</strong></p>
       </div>
     </div>
   );
