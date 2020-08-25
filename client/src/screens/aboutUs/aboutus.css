@@ -22,6 +22,19 @@
   text-align: left;
 }
 
+#mission::before,
+#impact::before,
+#stories::before,
+#leadship::before,
+#locations::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -17vh; 
+  height: 17vh; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
 .aboutus {
   text-align: center;
   font-size: 2.64vw;
@@ -32,3 +45,4 @@ h4 {
 p {
   font-size: 1.2vw;
 }
+
