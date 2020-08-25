@@ -132,7 +132,7 @@ function UserInputs(props) {
             </div>
           </div>
           <div className="donate-btn-div">
-            <button className="donate-btn" type="submit">
+            <button className="donate-btn" type="submit" onClick={props.addNew}>
               DONATE NOW
             </button>
           </div>
