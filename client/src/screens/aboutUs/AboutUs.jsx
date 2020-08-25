@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from '../../components/layout/Layout.jsx'
 import Locations from '../../components/locations/Locations'
-import Impact from '../../components/impact/Impact'
+import ActionCard from '../../components/action-card/ActionCard'
 import { getStories } from "../../services/stories"
 
 
@@ -15,9 +15,13 @@ export default function AboutUs(props) {
     const fetchStories = async () => {
       const response = await getStories();
       updateStories(response)
+      console.log(Stories)
     };
+
     fetchStories();
   }, [])
+
+  
 
   return (
     <>
@@ -41,20 +45,17 @@ export default function AboutUs(props) {
       </div>
       <div className="impact">
         <h4>IMPACT</h4>
-        
-          <Impact />
-          
+        {/* Something here for call to action circles?  */}
       </div>
       <div className="stories">
         <h4>ADOPTION STORIES</h4>
           {Stories.map((story) => {
           console.log(Stories)
-          return (
-            <div className='adoption-stories'>
-              <img src={story.imgURL} alt='doggo' />
-              <h5>{story.name}</h5>
-              <p>{story.story}</p>
-              </div>
+            return (
+
+              <ActionCard image={`${story.imgURL}`}
+                action={story.name}
+                detail={story.story} />
           )
           
         })}

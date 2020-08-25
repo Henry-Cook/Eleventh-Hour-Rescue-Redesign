@@ -3,6 +3,7 @@ import api from "./apiConfig";
 export const getStories = async id => {
   try {
     const response = await api.get('/stories');
+    console.log(response.data)
     return response.data
   } catch (error) {
     throw error
@@ -12,6 +13,7 @@ export const getStories = async id => {
 export const getStory = async (id, story)  => {
   try {
     const response = await api.get(`/story/${id}`);
+    console.log(response.data)
     return response.data;
   } catch (error) {
     throw error;
