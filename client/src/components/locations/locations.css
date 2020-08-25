@@ -3,13 +3,29 @@
   font-size: 1.2vw;
   width: 57vw;
 }
+p{
+  text-align:left;
+}
 
 .locations-name{
+  color: #00a1f8;
+  margin: 0 0;
+}
+.appt{
   color: #00a1f8;
 }
 
 
 .rockaway, .EHRKennels, .kearney, .roxbury {
-  margin: 0 4vw 0 0;
-  width: 14vw;
+  margin: 0 7vw 0 0;
+  width: 10vw;
+  flex-direction:column;
+  flex-wrap:nowrap;
+}
+span{
+  margin: 0 auto;
+  display:inline-block;
+  width:100%;
+  flex-direction:column;
+  
 }

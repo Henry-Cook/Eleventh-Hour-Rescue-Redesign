@@ -27,8 +27,8 @@ export default function AboutUs(props) {
             <QuickLinks />
           </div>
           <div className="everything">
-            <h1 className="aboutus">About Us</h1>
-            <div className="mission">
+            <h1 className="aboutus" id="mission">About Us</h1>
+            <div className="mission" >
               <h4>MISSION</h4>
               <p className="mission-text">
                 Eleventh Hour Rescue is a fully registered 501C(3), nonprofit,
@@ -43,11 +43,11 @@ export default function AboutUs(props) {
                 animal lovers everywhere.
               </p>
             </div>
-            <div className="impact">
-            <h4>IMPACT</h4>
-            {/* Something here for call to action circles?  */}
+            <div className="impact" id='impact'>
+              <h4>IMPACT</h4>
+              {/* Something here for call to action circles?  */}
             </div>
-            <div className="stories">
+            <div className="stories" id='stories'>
               <h4>ADOPTION STORIES</h4>
               {Stories.map((story) => {
                 console.log(Stories);
@@ -60,10 +60,11 @@ export default function AboutUs(props) {
                 );
               })}
             </div>
-            <div className="leadership">
+            <div className="leadership" id='leadership'>
               <h4>LEADERSHIP</h4>
+
             </div>
-            <div className="locations">
+            <div className="locations" id='locations'>
               <h4>LOCATIONS</h4>
               {/* *INSERT LOCATION COMPONENT HERE */}
               <Locations />

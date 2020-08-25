@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import './quicklinks.css'
 
 export default function QuickLinks() {
@@ -7,21 +6,21 @@ export default function QuickLinks() {
     <aside className='quick'>
       <ul className='quick-links'>
         <h4><li>Quick Links</li></h4>
-        <Link>
+        <a href='#mission'>
           <li>Mission</li><br></br>
-        </Link>
-        <Link>
+        </a>
+        <a href='#impact'>
           <li>Impact</li><br></br>
-        </Link>
-        <Link>
+        </a>
+        <a href='#stories'>
           <li>Adoption Stories</li><br></br>
-        </Link>
-        <Link>
+        </a>
+        <a href='#leadership'>
           <li>Leadership</li><br></br>
-        </Link>
-        <Link>
+        </a>
+        <a href='#locations'>
           <li>Locations</li><br></br>
-        </Link>
+        </a>
       </ul>
     </aside>
   );
