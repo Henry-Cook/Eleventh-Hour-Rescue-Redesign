@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Selector from "../../components/selector/Selector";
 import UserInput from "../userInputs/UserInputs";
 import { createDonation } from "../../services/donations";
+import { useHistory, Redirect } from "react-router-dom";
 
 function Form() {
   // const [selection, setSelection] = useState("");
@@ -46,12 +47,13 @@ function Form() {
     });
   };
 
-  const addNew = (e) => {
+  let history = useHistory();
+
+  const donate = async (e) => {
     e.preventDefault();
-    let tempOb = { ...choices, ...userInfo };
-    // console.log(tempOb);
-    // setSelection({ tempOb });
-    console.log(createDonation(tempOb));
+    const tempOb = { ...choices, ...userInfo };
+    const data = await createDonation(tempOb);
+    history.push(`/confirmation/${data._id}`);
   };
 
   return (
@@ -60,7 +62,7 @@ function Form() {
         handleTypeClick={handleTypeClick}
         handleAmountClick={handleAmountClick}
       />
-      <UserInput handleChange={handleChange} addNew={addNew} />
+      <UserInput handleChange={handleChange} addNew={donate} />
     </>
   );
 }
