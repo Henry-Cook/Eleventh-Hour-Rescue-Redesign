@@ -1,4 +1,5 @@
 const Story = require("../models/stories");
+const Donation = require("../models/donations");
 const db = require("../db/connection");
 
 db.on("error", console.error.bind(console, "connection error:"));
@@ -25,14 +26,14 @@ const getStory = async (req, res) => {
   }
 };
 
-const createStory = async (req, res) => {
+const createDonation = async (req, res) => {
   try {
-    const story = await new Story(req.body);
-    await story.save();
-    res.status(201).json(post);
+    const donation = await new Donation(req.body);
+    await donation.save();
+    return res.status(201).json(donation);
   } catch (error) {
     console.log(error);
-    res.status(200).json(post);
+    return res.status(200).json(donation);
   }
 };
 
@@ -49,10 +50,10 @@ const updateStory = async (req, res) => {
   });
 };
 
-const deleteStory = async (req, res) => {
+const deleteDonation = async (req, res) => {
   try {
     const { id } = req.params;
-    const deleted = await Story.findByIdAndDelete(id);
+    const donation = await Donation.findByIdAndDelete(id);
     if (deleted) {
       return res.status(200).send("deleted");
     }
@@ -65,7 +66,7 @@ const deleteStory = async (req, res) => {
 module.exports = {
   getStories,
   getStory,
-  createStory,
+  createDonation,
   updateStory,
-  deleteStory,
+  deleteDonation,
 };
