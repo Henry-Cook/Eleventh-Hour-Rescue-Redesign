@@ -11,5 +11,14 @@
 
 .rockaway, .EHRKennels, .kearney, .roxbury {
   margin: 0 4vw 0 0;
-  width: 14vw;
+  width: 10vw;
+  flex-direction:column;
+  flex-wrap:nowrap;
+}
+span{
+  margin: 0 auto;
+  display:inline-block;
+  width:100%;
+  flex-direction:column;
+  
 }

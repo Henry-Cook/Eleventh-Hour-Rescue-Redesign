@@ -11,11 +11,11 @@ export default function Locations() {
           <br />
           Rockaway, NJ
         </p>
-        <p>
-          <strong>Mon-Sat</strong> 10am-9:30pm
-          <br />
-          <strong>Sun</strong> 11am-6pm
-        </p>
+
+          <span><strong>Mon-Sat</strong> 10am-9:30pm</span>
+          <br /><br/>
+          <span><strong>Sun</strong> 11am-6pm</span>
+
         <p>
           973-970-0371
           <br />
@@ -51,11 +51,9 @@ export default function Locations() {
           <br />
           Kearny, NJ
         </p>
-        <p>
-          <strong>Mon-Sat</strong> 9am-9pm
+          <span><strong>Mon-Sat</strong> 9am-9pm</span>
           <br />
-          <strong>Sun</strong> 10am-7pm
-        </p>
+          <span><strong>Sun</strong> 10am-7pm</span>
         <p><strong>No direct phone</strong></p>
       </div>
 
@@ -66,11 +64,9 @@ export default function Locations() {
           <br />
           Succasunna,NJ
         </p>
-        <p>
-          <strong>Sat</strong>11am-4pm
+          <span><strong>Sat</strong>11am-4pm</span>
           <br />
-          <strong>Sun</strong> 11am-4pm
-        </p>
+          <span><strong>Sun</strong> 11am-4pm</span>
         <p><strong>No direct phone</strong></p>
       </div>
     </div>

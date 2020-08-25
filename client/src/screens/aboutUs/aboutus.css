@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: 57vw 15vw;
   grid-gap: 3vw;
+  padding-top: 1vh;
   font-family: 'Assistant', sans-serif;
 }
 .quick-links {
