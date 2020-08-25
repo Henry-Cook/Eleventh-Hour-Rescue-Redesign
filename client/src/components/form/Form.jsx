@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Selector from "../../components/selector/Selector";
 import UserInput from "../userInputs/UserInputs";
+import { createDonation } from "../../services/donations";
 
 function Form() {
-  const [selection, setSelection] = useState({});
-
+  // const [selection, setSelection] = useState("");
+  // console.log(selection);
   const [choices, setChoices] = useState({
     type: "monthly",
     amount: "",
@@ -45,13 +46,21 @@ function Form() {
     });
   };
 
+  const addNew = (e) => {
+    e.preventDefault();
+    let tempOb = { ...choices, ...userInfo };
+    // console.log(tempOb);
+    // setSelection({ tempOb });
+    console.log(createDonation(tempOb));
+  };
+
   return (
     <>
       <Selector
         handleTypeClick={handleTypeClick}
         handleAmountClick={handleAmountClick}
       />
-      <UserInput handleChange={handleChange} />
+      <UserInput handleChange={handleChange} addNew={addNew} />
     </>
   );
 }
