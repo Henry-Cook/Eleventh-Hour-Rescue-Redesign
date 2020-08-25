@@ -67,6 +67,10 @@ li {
   margin-right: 2.5vw;
 }
 
+.currentTab {
+  color: #f8d000 !important;
+}
+
 .social-media-icons {
   max-height: 1.5vw;
   margin-right: .65vw;
