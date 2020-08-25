@@ -7,6 +7,7 @@ export default function InfoCard(props) {
     <div className="action-card" id={`${props.id}`}>
       <img src={props.image} />
       <h2>{props.action}</h2>
+      <p>{props.detail}</p>
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function Impact() {
 
 {impactCards.map((card, i) => {
             return (
-                <ActionCard id={i} action={card.action} image={card.image} />
+              <ActionCard id={i} action={card.action} image={card.image} detail={card.detail} />
             )
           })}
       
