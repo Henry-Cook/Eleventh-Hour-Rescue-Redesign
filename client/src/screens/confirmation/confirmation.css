@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@700&display=swap");
+.confirmation {
+  margin-top: 174px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thank-you {
+  font-size: 2.39vw;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  margin-top: 43px;
+  margin-bottom: 17px;
+}
+
+.confirmation-text {
+  display: inline-block;
+  width: 33.8%;
+  text-align: center;
+  margin-top: 0;
+}
