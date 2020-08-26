@@ -61,7 +61,7 @@
   margin-top: 3vh;
   align-items: center;
 }
-.cards-container a {
+.cards-container a, h2 {
   padding: 20;
   text-align: center;
   text-decoration: none;

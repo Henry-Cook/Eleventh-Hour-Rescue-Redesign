@@ -10,11 +10,4 @@
 
 .action-card img {
   width: 100%;
-  transition: .3s ease-in-out;
-}
-
-.action-card img:hover {
-  transform: scale(1.2);
-
-
 }

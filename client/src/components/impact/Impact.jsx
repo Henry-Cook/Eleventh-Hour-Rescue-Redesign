@@ -9,8 +9,19 @@ export default function Impact() {
     <div className="impact">
 
 {impactCards.map((card, i) => {
-            return (
-              <ActionCard id={i} action={card.action} image={card.image} detail={card.detail} />
+  return (
+    <div className="impactCard">
+      
+      <ActionCard style={{
+        backgroundColor: '#e1e1e1',
+        width: '100%',
+        padding: '0'}}
+        id={`impact${i+1}`}
+        action={card.action}
+        image={card.image}
+        detail={card.detail} />
+      
+    </div>
             )
           })}
       

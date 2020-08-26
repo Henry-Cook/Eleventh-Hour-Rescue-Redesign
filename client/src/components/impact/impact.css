@@ -1,0 +1,31 @@
+
+.impactCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 24vw;
+}
+
+.impactCard h2, p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.impactCard img {
+  width: 12vw;
+  padding: 1vh;
+}
+
+#impact1 p {
+  padding: 0 3vw;
+}
+#impact2 p {
+  padding: 0 2.5vw;
+}
+#impact3 p {
+  padding: 0 1vw;
+}
+#impact4 p {
+  padding: 0 1.5vw;
+}

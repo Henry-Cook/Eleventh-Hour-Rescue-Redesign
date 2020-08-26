@@ -29,22 +29,22 @@ export const homeCards = [
 
 export const impactCards = [
   {
-    action: "Adopt",
+    action: "ADOPT",
     image: impactAdopt,
     detail: "Since our founding in 2011, Eleventh Hour Rescue has found homes for over 4,000 cats and dogs.  We have a 92% placement rate, one of the highest in the state."
   },
   {
-    action: "Donate",
+    action: "DONATE",
     image: impactDonate,
     detail: "In 2019, we have received over $10,000 in donations from our valued supporters.  All donations help with medical costs, transporting dogs, boarding, feeding, fostering and facility maintenance. "
   },
   {
-    action: "Volunteer",
+    action: "VOLUNTEER",
     image: impactVolunteer,
     detail: "Volunteers are a vital part of our organization, and play a huge role in caring for the animals in our care centers.  With their help, our facilities operate with over hundreds of volunteers across three locations."
   },
   {
-    action: "Foster",
+    action: "FOSTER",
     image: impactFoster,
     detail: "Our foster families  provide a clean, safe, loving environment for pets and help them prepare to find a new home.  After receiving foster care, these pets are healthier and happier, which means they are well prepared to be adopted by a loving family. "
   },
