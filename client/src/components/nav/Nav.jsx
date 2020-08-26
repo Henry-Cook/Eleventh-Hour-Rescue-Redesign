@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from '../../assets/images/layout/EHS Logo 1.png';
 import amzn from '../../assets/images/layout/Amazon@3x.png';
 import fb from '../../assets/images/layout/Facebook@3x.png';
@@ -18,19 +18,33 @@ const Nav = () => {
           <nav className="navi">
             <ul className="navLinks">
 
-              <li className="page-links"><Link to="/">Home</Link></li>
-              <li className="page-links"><Link to="/aboutus">About Us</Link></li>
-              <li className="page-links"><Link to="/donate">Donate</Link></li>
-              <li className="page-links"><Link to="/404">Adopt</Link></li>
-              <li className="page-links"><Link to="/404">Volunteer</Link></li>
-              <li className="page-links"><Link to="/404">Foster</Link></li>
-              <li className="page-links"><Link to="/404">Events</Link></li>
+              <li className="page-links">
+                <NavLink exact to="/" activeClassName="currentTab">Home</NavLink>
+              </li>
+              <li className="page-links">
+                <NavLink to="/aboutus" activeClassName="currentTab">About Us</NavLink>
+              </li>
+              <li className="page-links">
+                <NavLink to="/donate" activeClassName="currentTab">Donate</NavLink>
+              </li>
+              <li className="page-links">
+                <NavLink to="/404" activeClassName="currentTab">Adopt</NavLink>
+              </li>
+              <li className="page-links">
+                <NavLink to="/404" activeClassName="currentTab">Volunteer</NavLink>
+              </li>
+              <li className="page-links">
+                <NavLink to="/404" activeClassName="currentTab">Foster</NavLink>
+              </li>
+              <li className="page-links">
+                <NavLink to="/404" activeClassName="currentTab">Events</NavLink>
+              </li>
 
               <li className="social-media-links">
-                <Link to="/404"><img src={amzn} className="social-media-icons amazon" alt="amazon"/></Link>
-                <Link to="/404"><img src={twitter} className="social-media-icons twitter" alt="twitter"/></Link>
-                <Link to="/404"><img src={fb} className="social-media-icons facebook" alt="facebook"/></Link>
-                <Link to="/404"><img src={ig} className="social-media-icons instagram" alt="instagram"/></Link>
+                <NavLink to="/404"><img src={amzn} className="social-media-icons amazon" alt="amazon"/></NavLink>
+                <NavLink to="/404"><img src={twitter} className="social-media-icons twitter" alt="twitter"/></NavLink>
+                <NavLink to="/404"><img src={fb} className="social-media-icons facebook" alt="facebook"/></NavLink>
+                <NavLink to="/404"><img src={ig} className="social-media-icons instagram" alt="instagram"/></NavLink>
               </li>
           
             </ul>

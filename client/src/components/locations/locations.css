@@ -22,7 +22,7 @@ p{
   flex-direction:column;
   flex-wrap:nowrap;
 }
-span{
+.left{
   margin: 0 auto;
   display:inline-block;
   width:100%;

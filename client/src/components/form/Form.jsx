@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import Selector from "../../components/selector/Selector";
 import UserInput from "../userInputs/UserInputs";
 import { createDonation } from "../../services/donations";
-import { useHistory, Redirect } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function Form() {
-  // const [selection, setSelection] = useState("");
-  // console.log(selection);
   const [choices, setChoices] = useState({
     type: "monthly",
     amount: "",
@@ -53,6 +51,7 @@ function Form() {
     e.preventDefault();
     const tempOb = { ...choices, ...userInfo };
     const data = await createDonation(tempOb);
+    console.log(data);
     history.push(`/confirmation/${data._id}`);
   };
 

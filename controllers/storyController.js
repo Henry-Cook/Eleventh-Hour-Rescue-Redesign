@@ -67,7 +67,7 @@ const deleteDonation = async (req, res) => {
   try {
     const { id } = req.params;
     const donation = await Donation.findByIdAndDelete(id);
-    if (deleted) {
+    if (donation) {
       return res.status(200).send("deleted");
     }
     throw new Error("not found");

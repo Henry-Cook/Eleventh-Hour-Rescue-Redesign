@@ -7,7 +7,7 @@ function UserInputs(props) {
   return (
     <>
       <div className="form-container">
-        <form>
+        <form onSubmit={props.addNew}>
           <div className="paypal-choice">
             <input className="paypal-radio" type="radio" />
             <p className="paypal-text">PayPal</p>
@@ -132,7 +132,7 @@ function UserInputs(props) {
             </div>
           </div>
           <div className="donate-btn-div">
-            <button className="donate-btn" type="submit" onClick={props.addNew}>
+            <button className="donate-btn" type="submit">
               DONATE NOW
             </button>
           </div>
