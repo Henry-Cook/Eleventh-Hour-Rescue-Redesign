@@ -1,31 +1,21 @@
-
-.impactCard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-  width: 24vw;
+.impact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 1.8vw;
+  grid-column-gap: 1.8vw;
+  margin: 1.8vw;
+}
+.impactCard p, h2 {
+font-size: 1.11vw;
+text-align: center;
 }
 
-.impactCard h2, p {
-  font-size: 16px;
-  text-align: center;
+.impactCard h2 {
+  color: #00a1f8;
 }
 
 .impactCard img {
-  width: 12vw;
-  padding: 1vh;
-}
-
-#impact1 p {
-  padding: 0 3vw;
-}
-#impact2 p {
-  padding: 0 2.5vw;
-}
-#impact3 p {
-  padding: 0 1vw;
-}
-#impact4 p {
-  padding: 0 1.5vw;
+  width: 11.81vw; 
+  margin-bottom: 1vh;
 }

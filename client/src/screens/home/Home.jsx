@@ -23,7 +23,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="cards-container">
+        <div className="home-links">
           {homeCards.map((card, i) => {
             return (
               <Link to={`/${card.action.toLowerCase()}`}>

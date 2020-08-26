@@ -43,12 +43,14 @@ export default function AboutUs(props) {
                 animal lovers everywhere.
               </p>
             </div>
-            <div className="impact" id='impact'>
+
+           
               <h4>IMPACT</h4>
 
               <Impact />
 
-            </div>
+            
+
             <div className="stories" id='stories'>
               <h4>ADOPTION STORIES</h4>
               {Stories.map((story) => {

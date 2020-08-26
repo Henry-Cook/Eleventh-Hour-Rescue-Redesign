@@ -7,7 +7,7 @@
   grid-template-rows: .5fr .2fr .5fr;
   height: 100%;
   justify-content: center;
-  margin-bottom: 9vh;
+  margin-bottom: 10vh;
 }
 
 #homedogs {
@@ -21,20 +21,17 @@
 }
 
 .welcome-message {
+  margin-bottom: 3.3vh;
   font-family: 'Assistant';
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   grid-column-start: 1;
   grid-column-end: -1;
   grid-row-start: 2;
   grid-row-end: 3;
-  justify-content: center;
-}
-
-.welcome-message h1, p {
-  display: flex;
-  text-align: center;
+  
 }
 
 .welcome-message h1 {
@@ -47,10 +44,29 @@
 
 .welcome-message p {
   margin: 0;
+  text-align: center;
   padding: 2vh 5vw 4vh 5vw;
   font-size: 24px;
 }
 
+.home-links {
+display: flex;
+}
+
+.home-links a {
+  color: #00a1f8;
+  text-decoration: none;
+}
+
+.home-links h2 {
+padding: 1.35vh;
+}
+
+.home-links a:hover {
+  text-decoration: underline;
+}
+
+/* 
 .cards-container {
   grid-row-end: 4;
   grid-column-start: 1;
@@ -61,7 +77,7 @@
   margin-top: 3vh;
   align-items: center;
 }
-.cards-container a, h2 {
+.cards-container p, h2 {
   padding: 20;
   text-align: center;
   text-decoration: none;
@@ -71,4 +87,4 @@
 
 .cards-container a:hover {
   text-decoration: underline;
-}
+} */

@@ -11,3 +11,7 @@
 .action-card img {
   width: 100%;
 }
+
+.action-card h2, p {
+  margin: 0;
+}
