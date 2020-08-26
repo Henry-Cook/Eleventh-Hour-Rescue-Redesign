@@ -45,9 +45,11 @@ export default function AboutUs(props) {
             </div>
 
            
-              <h4>IMPACT</h4>
+            <h4>IMPACT</h4>
 
+            <div className="impact" id="impact">
               <Impact />
+              </div>
 
             
 

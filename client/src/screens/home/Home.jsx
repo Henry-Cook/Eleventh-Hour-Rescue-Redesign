@@ -27,7 +27,7 @@ export default function Home() {
           {homeCards.map((card, i) => {
             return (
               <Link to={`/${card.action.toLowerCase()}`}>
-                <ActionCard id={i} action={card.action} image={card.image} />
+                <ActionCard id={'homeCard'} action={card.action} image={card.image} />
                 </Link>
             )
           })}
