@@ -15,7 +15,8 @@ export default function Impact() {
    
           <ActionCard
             style={{
-              backgroundColor: '#e1e1e1'}}
+              backgroundColor: '#e1e1e1',
+            display: 'inline-block'}}
         id={`impact${i+1}`}
         action={card.action}
         image={card.image}

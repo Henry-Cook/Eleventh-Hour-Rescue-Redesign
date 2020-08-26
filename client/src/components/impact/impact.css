@@ -7,28 +7,34 @@
   margin: 1.8vw;
 }
 
-
-
-.impact img {
-  width: 11.81vw;
+.impactCards p, h2 {
+  text-align: center;
+  margin: auto;
 }
 
-.impact h2 {
-  font-size: 1.2vw;
+.impactCards img {
+  width: 11.81vw;
+}
+.impactCards p {
+  font-size: 1.11vw;
+}
+
+.impactCards h2 {
+  font-size: 1.32vw;
   color: #00a1f8;
 }
 
 #impact1 p {
-  width: 17vw;
+  width: 16.74vw;
 }
 #impact2 p {
-  width: 19vw;
+  width: 18.89vw;
 }
 #impact3 p {
-  width: 22vw;
+  width: 21.74vw;
 }
 #impact4 p {
-  width: 21vw;
+  width: 20.97vw;
 }
 
 
