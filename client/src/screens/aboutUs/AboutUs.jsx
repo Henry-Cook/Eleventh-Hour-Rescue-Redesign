@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../components/layout/Layout.jsx";
 import Locations from "../../components/locations/Locations";
-
+import Impact from '../../components/impact/Impact'
 import QuickLinks from "../../components/quicklinks/QuickLinks";
 import { getStories } from "../../services/stories";
 import "./aboutus.css";
@@ -45,7 +45,9 @@ export default function AboutUs(props) {
             </div>
             <div className="impact" id='impact'>
               <h4>IMPACT</h4>
-              {/* Something here for call to action circles?  */}
+
+              <Impact />
+
             </div>
             <div className="stories" id='stories'>
               <h4>ADOPTION STORIES</h4>
