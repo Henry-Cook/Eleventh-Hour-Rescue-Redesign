@@ -14,11 +14,22 @@
   margin: 0 auto;
 }
 
+.stories a, p {
+  text-decoration: none;
+  color: black;
+}
+
+.stories a:hover {
+  opacity: 0.5;
+}
+
 #story1 {
   width: 24.7vw;
   grid-column-start: 1;
+  grid-row-end: 2;
 }
 #story2 {
   width: 22.2vw;
   grid-column-start: 2;
+  height: 100%;
 }

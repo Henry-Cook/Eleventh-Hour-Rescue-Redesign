@@ -18,15 +18,6 @@ export const getStory = async (id, story)  => {
   }
 }
 
-export const createStory = async () => {
-  try {
-    const response = await api.post('/story/new');
-    return response.data;
-  } catch (error) {
-    throw error;
-  }
-}
-
 export const updateStory = async (id, story) => {
   try {
     const response = await api.put(`/story/${id}`)
@@ -36,19 +27,23 @@ export const updateStory = async (id, story) => {
   }
 }
 
-export const deleteStory = async id => {
-  try {
-    const response = await api.delete(`/story/${id}`)
-    return response.data
-  } catch (error) {
-    throw error 
-  }
-}
 
-// // module.exports = {
-//   getStories,
-//   getStory,
-//   createStory,
-//   updateStory,
-//   deleteStory,
-// };
+// export const createStory = async () => {
+//   try {
+//     const response = await api.post('/story/new');
+//     return response.data;
+//   } catch (error) {
+//     throw error;
+//   }
+// }
+
+
+
+// export const deleteStory = async id => {
+//   try {
+//     const response = await api.delete(`/story/${id}`)
+//     return response.data
+//   } catch (error) {
+//     throw error 
+//   }
+// }
