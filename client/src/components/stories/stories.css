@@ -6,6 +6,15 @@
   margin-top: 2.01vw;
 }
 
+.stories h2 {
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
+}
+
+.stories img {
+  margin: 0 auto;
+}
+
 #story1 {
   width: 24.7vw;
   grid-column-start: 1;
