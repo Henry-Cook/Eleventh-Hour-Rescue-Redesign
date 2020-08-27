@@ -1,7 +1,8 @@
 .locations-container{
   display: flex;
   font-size: 1.2vw;
-  width: 57vw;
+  width: 62vw;
+  align-items:space-between;
 }
 p{
   text-align:left;
@@ -14,8 +15,8 @@ p{
   color: #00a1f8;
 }
 .rockaway, .EHRKennels, .kearney, .roxbury {
-  margin: 0 7vw 0 0;
-  width: 10vw;
+  padding: 0 1vw 0 0;
+  width: 15.5vw;
   flex-direction:column;
   flex-wrap:nowrap;
 }
