@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { DisableRadio } from "../form/Form";
 import "./selector.css";
 
 function Selector(props) {
   const [tabStyleValue, setTabStyleValue] = useState("monthly");
   const [btnStyleValue, setBtnStyleValue] = useState("");
+  const [otherBlur, setOtherBlur] = useState(true);
 
   return (
     <>
@@ -91,17 +93,15 @@ function Selector(props) {
             >
               $100
             </button>
-            <button
-              className={btnStyleValue === "other" ? "btns-clicked" : "btns"}
-              onClick={(e) => {
+            <input
+              className={otherBlur ? "other" : "other-blur"}
+              placeholder="Other"
+              onChange={props.handleAmountOther}
+              onBlur={() => setOtherBlur(false)}
+              onClick={() => {
                 setBtnStyleValue("other");
-                props.handleAmountClick(e);
               }}
-              name="amount"
-              value="other"
-            >
-              Other
-            </button>
+            />
           </div>
         </div>
       </div>

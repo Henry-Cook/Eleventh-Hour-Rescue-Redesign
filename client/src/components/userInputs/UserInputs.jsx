@@ -1,52 +1,92 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { DisableRadio } from "../form/Form";
 import "./userInputs.css";
 import states from "./state";
 import addSpace from "../../utils/addSpace";
+import { set } from "mongoose";
+import paypal from "../../assets/images/donate/paypal2.png";
+import CC from "../../assets/images/donate/cc.png";
+import asterix from "../../assets/images/donate/Red Asterisk@3x.png";
 
 function UserInputs(props) {
+  const [disabled, setDisabled] = useState(true);
+  const disabledRadioBool = useContext(DisableRadio);
+
+  const handleRadio = (e) => {
+    if (e.target.value === "paypal") {
+      setDisabled(true);
+    } else if (e.target.value === "card") {
+      setDisabled(false);
+    }
+  };
+
   return (
     <>
       <div className="form-container">
-        <form>
+        <form onSubmit={props.addNew}>
           <div className="paypal-choice">
-            <input className="paypal-radio" type="radio" />
+            <input
+              className="paypal-radio"
+              type="radio"
+              value="paypal"
+              onClick={handleRadio}
+              name="select"
+              disabled={disabledRadioBool === true ? true : false}
+            />
             <p className="paypal-text">PayPal</p>
+            <img src={paypal} alt="paypal_img" className="paypal-img" />
           </div>
           <div className="credit-card-choice">
-            <input className="card-radio" type="radio" />
+            <input
+              className="card-radio"
+              type="radio"
+              value="card"
+              onClick={handleRadio}
+              name="select"
+              disabled={disabledRadioBool === true ? true : false}
+            />
 
             <p className="card-text">Credit Card or Debit Card</p>
+            <img src={CC} alt="paypal_img" className="CC-img" />
           </div>
 
           <div className="card-information">
             <input
+              disabled={disabled}
               className="number"
               onChange={props.handleChange}
               name="number"
               onKeyDown={addSpace}
               required
-              placeholder="Credit Card Number"
+              placeholder="Credit/Debit Card Number"
               type="text"
               maxlength="19"
               autoComplete="off"
-            />
+            ></input>
+            {/* <p className="asterix">*</p> */}
             <div className="card-verify">
               <input
+                disabled={disabled}
                 className="verify-one"
                 onChange={props.handleChange}
                 name="cvv"
                 type="text"
                 required
                 placeholder="CVV"
+                maxlength="3"
               />
+              {/* <p className="asterix">*</p> */}
               <input
+                disabled={disabled}
                 className="verify-two"
                 onChange={props.handleChange}
                 name="expiration"
                 type="text"
                 required
                 placeholder="MM/YY"
+                maxlength="5"
               />
+              {/* <p className="asterix">*</p> */}
             </div>
           </div>
           <div className="billing-info">
@@ -54,6 +94,7 @@ function UserInputs(props) {
             <div className="inputs">
               <div className="card-verify">
                 <input
+                  disabled={disabled}
                   className="verify-one"
                   onChange={props.handleChange}
                   type="text"
@@ -62,6 +103,7 @@ function UserInputs(props) {
                   placeholder="First Name"
                 />
                 <input
+                  disabled={disabled}
                   className="verify-two"
                   onChange={props.handleChange}
                   type="text"
@@ -72,6 +114,7 @@ function UserInputs(props) {
               </div>
               <div className="card-verify">
                 <input
+                  disabled={disabled}
                   className="verify-one"
                   onChange={props.handleChange}
                   type="text"
@@ -80,6 +123,7 @@ function UserInputs(props) {
                   placeholder="Address"
                 />
                 <input
+                  disabled={disabled}
                   className="verify-two"
                   onChange={props.handleChange}
                   type="text"
@@ -90,6 +134,7 @@ function UserInputs(props) {
               </div>
               <div className="card-verify">
                 <input
+                  disabled={disabled}
                   className="verify-one"
                   onChange={props.handleChange}
                   type="text"
@@ -98,6 +143,7 @@ function UserInputs(props) {
                   placeholder="City"
                 />
                 <input
+                  disabled={disabled}
                   className="verify-two"
                   onChange={props.handleChange}
                   type="text"
@@ -108,6 +154,7 @@ function UserInputs(props) {
               </div>
               <div className="card-verify">
                 <select
+                  disabled={disabled}
                   className="state-select"
                   name="state"
                   onChange={props.handleChange}
@@ -121,6 +168,7 @@ function UserInputs(props) {
               </div>
               <div className="card-verify">
                 <input
+                  disabled={disabled}
                   placeholder="Email Address"
                   className="input-email"
                   onChange={props.handleChange}
@@ -132,7 +180,7 @@ function UserInputs(props) {
             </div>
           </div>
           <div className="donate-btn-div">
-            <button className="donate-btn" type="submit" onClick={props.addNew}>
+            <button className="donate-btn" type="submit" disabled={disabled}>
               DONATE NOW
             </button>
           </div>

@@ -1,0 +1,28 @@
+.impactCards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 1.8vw;
+  grid-column-gap: 2.5vw;
+  margin: 0 1.8vw; 
+}
+
+.impactCards p {
+  text-align: center;
+}
+
+#impact1 p  {
+  width: 16.74vw;
+}
+#impact2 p {
+  width: 18.89vw;
+}
+#impact3 p {
+  width: 21.74vw;
+}
+#impact4 p {
+  width: 20.97vw;
+}
+#impact4 img {
+  margin-bottom: 0.5vw;
+}

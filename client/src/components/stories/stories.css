@@ -1,0 +1,24 @@
+.stories {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0;
+  grid-column-gap: 3.75vw;
+}
+
+.stories h2 {
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
+}
+
+.stories img {
+  margin: 0 auto;
+}
+
+#story1 {
+  width: 24.7vw;
+  grid-column-start: 1;
+}
+#story2 {
+  width: 22.2vw;
+  grid-column-start: 2;
+}
