@@ -10,7 +10,7 @@ export default function Leadership() {
       <div className="leadershipCard">
         <ActionCard
           style={{display: 'inline-block'}}
-        id={`{leadership${i+1}}`}
+        id={`leadership${i+1}`}
         action={card.action}
         subtitle={card.subtitle}
         image={card.image}
