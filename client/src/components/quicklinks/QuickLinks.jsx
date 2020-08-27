@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./quicklinks.css";
 
 export default function QuickLinks() {
+  const [defaultLink, updateDefaultLink] = useState('mission')
   const [missionLinkColor, updateMissionLinkColor] = useState("");
   const [impactLinkColor, updateImpactLinkColor] = useState("");
   const [storiesLinkColor, updateStoriesLinkColor] = useState("");
@@ -11,6 +12,8 @@ export default function QuickLinks() {
   const linkColor = (currentLinkColor) => {
     return currentLinkColor !== "clicked" ? "clicked" : "";
   };
+
+
   const handleClick = (e) => {
     updateMissionLinkColor(linkColor(e))
     updateImpactLinkColor('')
@@ -56,7 +59,10 @@ export default function QuickLinks() {
         <h4>
           <li>Quick Links</li>
         </h4>
-        <a href="#mission" className={missionLinkColor} onClick={ () => {handleClick(missionLinkColor)}}>
+        <a href="#mission" className={defaultLink !== 'mission' ? '' : 'clicked'}
+          onClick={(e) => {
+          updateDefaultLink('mission')
+        }}>
           <li>Mission</li>
           <br></br>
         </a>

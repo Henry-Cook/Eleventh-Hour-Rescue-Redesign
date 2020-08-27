@@ -3,6 +3,8 @@ import Layout from "../../components/layout/Layout.jsx";
 import Locations from "../../components/locations/Locations";
 
 import QuickLinks from "../../components/quicklinks/QuickLinks";
+
+
 import { getStories } from "../../services/stories";
 import "./aboutus.css";
 
@@ -25,6 +27,7 @@ export default function AboutUs(props) {
         <div className="container">
           <div className="quick-links">
             <QuickLinks />
+
           </div>
           <div className="everything">
             <h1 className="aboutus" id="mission">About Us</h1>
