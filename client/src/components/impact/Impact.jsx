@@ -14,7 +14,6 @@ export default function Impact() {
               backgroundColor: "#e1e1e1",
               padding: '1vh'
             }}
-
             id={`impact${i + 1}`}
             action={card.action}
             image={card.image}
