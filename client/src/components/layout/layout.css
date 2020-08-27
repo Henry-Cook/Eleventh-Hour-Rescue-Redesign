@@ -19,6 +19,7 @@ body {
 footer {
   bottom: 0;
   height: 3vh;
+  width: 100%;
   text-align: center;
 }
 
@@ -27,4 +28,28 @@ footer h4 {
   font-size: 1.11vw;
   line-height: 1.11vw;
   font-weight: normal;
+}
+
+@media screen and (max-height: 1366px) and (orientation: portrait) {
+  .layout-children {
+    margin-top: 9vh;
+  }
+}
+
+/* this is where i need to put in the hamburger */
+@media screen and (max-height: 899px) {
+  .layout-children {
+    margin-top: 8vh;
+    width: 100%;
+  }
+  footer {
+    bottom: 0;
+    height: 3vh;
+    text-align: center;
+    background: #00a1f8;
+  }
+  footer h4 {
+    font-size: 0;
+    line-height: 0;
+  }
 }
