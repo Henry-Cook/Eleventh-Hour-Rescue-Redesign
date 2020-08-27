@@ -8,6 +8,11 @@ import impactDonate from "../assets/images/aboutUs/impactDonate.png";
 import impactVolunteer from "../assets/images/aboutUs/impactVolunteer.png";
 import impactFoster from "../assets/images/aboutUs/impactFoster.png";
 
+import janeDoe from "../assets/images/aboutUs/janeDoe.png";
+import johnDoe from "../assets/images/aboutUs/johnDoe.png";
+import aceMcgee from "../assets/images/aboutUs/aceMcgee.png";
+import normaSmith from "../assets/images/aboutUs/normaSmith.png";
+
 export const homeCards = [
   {
     action: "Donate",
@@ -48,4 +53,30 @@ export const impactCards = [
     image: impactFoster,
     detail: "Our foster families  provide a clean, safe, loving environment for pets and help them prepare to find a new home.  After receiving foster care, these pets are healthier and happier, which means they are well prepared to be adopted by a loving family. "
   },
-];
+]
+
+export const leadershipCards = [
+  {
+    action: "JANE DOE",
+    image: janeDoe,
+    subtitle: 'Founder',
+    detail: 'A lifelong animal lover, Jane founded Eleventh Hour Rescue in 2001, after the passing of her beloved dog, Chewy.'
+  },
+  {
+    action: "JOHN DOE",
+    image: johnDoe,
+    subtitle: 'Manager',
+    detail: 'John is a loving and supporting husband who shares his wife’s fondness for animals.  He oversee the day-to-day of our three locations across New Jersey.'
+  },
+  {
+    action: "ACE MCGEE",
+    image: aceMcgee,
+    subtitle: 'Supervisor',
+    detail: 'John is a loving and supporting husband who shares his wife’s fondness for animals.  He oversee the day-to-day of our three locations across New Jersey.'
+  },
+  {
+    action: "NORMA SMITH",
+    image: normaSmith,
+    subtitle: 'Volunteer and Foster Coordinator',
+  detail: 'Norma has decided to spend her retirment giving back to the community.'}
+] 

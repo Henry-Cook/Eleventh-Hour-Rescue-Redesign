@@ -17,8 +17,6 @@ export default function Stories() {
   }, []);
 
   return (
-
-    
       stories.map((story, i) => {
         return (
           <ActionCard
@@ -27,8 +25,6 @@ export default function Stories() {
             action={story.name}
             detail={story.story} />
         )
-      })
-
-    
+      }) 
   )
 }

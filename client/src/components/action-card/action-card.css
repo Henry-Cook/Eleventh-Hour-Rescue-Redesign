@@ -20,3 +20,7 @@
   margin-bottom: 1.041vw;
   width: 11.81vw;
 }
+
+.action-card h3 {
+  display: none;
+}

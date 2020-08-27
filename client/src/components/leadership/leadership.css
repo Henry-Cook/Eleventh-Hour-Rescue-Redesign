@@ -1,0 +1,37 @@
+.leadership {
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+.leadershipCard {
+  display: inline-block;
+}
+.leadershipCard h3 {
+  display: revert;
+  color: #00a1f8;
+  font-size: 1.12vw;
+  font-weight: 200;
+  line-height: 1;
+}
+.leadershipCard img {
+  width: 6.94vw;
+  height: 6.94vw;
+  position: absolute;
+  padding: 0;
+}
+.leadershipCard p, h3 {
+  padding-left: 8vw;
+  text-align: left;
+}
+.leadershipCard p {
+  padding-top: 1vw;
+  width: 16vw;
+}
+.leadershipCard h3 {
+  margin: 0;
+}
+.leadershipCard h2 {
+  text-align: left !important;
+  padding-left: 8vw;
+}

@@ -3,6 +3,7 @@ import Layout from "../../components/layout/Layout.jsx";
 import Locations from "../../components/locations/Locations";
 import Impact from "../../components/impact/Impact";
 import Stories from "../../components/stories/Stories";
+import Leadership from '../../components/leadership/Leadership'
 import QuickLinks from "../../components/quicklinks/QuickLinks";
 import "./aboutus.css";
 
@@ -37,7 +38,6 @@ export default function AboutUs(props) {
             </div>
 
             <h4>IMPACT</h4>
-
             <div className="impact" id="impact">
               <Impact />
             </div>
@@ -46,9 +46,11 @@ export default function AboutUs(props) {
               <Stories />
             </div>
 
+            <h4>LEADERSHIP</h4>
             <div className="leadership" id="leadership">
-              <h4>LEADERSHIP</h4>
+              <Leadership />
             </div>
+
             <div className="locations" id="locations">
               <h4>LOCATIONS</h4>
               {/* *INSERT LOCATION COMPONENT HERE */}
