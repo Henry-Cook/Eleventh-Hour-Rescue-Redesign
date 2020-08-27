@@ -1,1 +1,22 @@
 
+.action-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-card h2 {
+  font-size: 1.32vw;
+  color: #00a1f8;
+  text-align: center;
+  margin: 0 auto;
+} 
+.action-card p {
+  font-size: 1.12vw;
+  margin: 0 auto;
+}
+
+.action-card img {
+  margin: 0.5vh auto;
+  margin-bottom: 1.041vw;
+  width: 11.81vw;
+}
