@@ -7,7 +7,7 @@
   grid-template-rows: .5fr .2fr .5fr;
   height: 100%;
   justify-content: center;
-  margin-bottom: 9vh;
+  margin-bottom: 10vh;
 }
 
 #homedogs {
@@ -21,54 +21,62 @@
 }
 
 .welcome-message {
+  margin-bottom: 1.5vh;
   font-family: 'Assistant';
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   grid-column-start: 1;
   grid-column-end: -1;
   grid-row-start: 2;
   grid-row-end: 3;
-  justify-content: center;
-}
-
-.welcome-message h1, p {
-  display: flex;
-  text-align: center;
+  
 }
 
 .welcome-message h1 {
   margin: 0;
   color: #00a1f8;
-  font-size: 52px;
+  font-size: 3.6vw;
   padding: 15px 0 5px 0;
   font-weight: 700;
 }
 
 .welcome-message p {
   margin: 0;
-  padding: 2vh 5vw 4vh 5vw;
-  font-size: 24px;
-}
-
-.cards-container {
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  display: flex;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin-top: 3vh;
-  align-items: center;
-}
-.cards-container a {
-  padding: 20;
   text-align: center;
-  text-decoration: none;
-  color: #00a1f8;
-  font-weight: bold;
+  padding: 2vh 5vw 4vh 5vw;
+  font-size: 1.7vw;
 }
 
-.cards-container a:hover {
+.home-links {
+display: flex;
+}
+
+.home-links a {
+  color: #00a1f8;
+  text-decoration: none;
+}
+
+.home-links h2 {
+padding: 1.35vh;
+margin: 0;
+  font-size: 1.67vw;
+}
+
+.home-links a:hover {
   text-decoration: underline;
+}
+
+#homeCard {
+  width: 16vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5vw;
+}
+
+#homeCard img {
+  width: 100%;
 }

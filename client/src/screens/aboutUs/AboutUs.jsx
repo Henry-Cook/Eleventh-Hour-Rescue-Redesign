@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../components/layout/Layout.jsx";
 import Locations from "../../components/locations/Locations";
-// import Impact from "../../components/impact/Impact";
+import Impact from '../../components/impact/Impact'
 import QuickLinks from "../../components/quicklinks/QuickLinks";
 import { getStories } from "../../services/stories";
 import "./aboutus.css";
@@ -45,13 +45,16 @@ export default function AboutUs(props) {
               </p>
             </div>
 
+           
             <h4>IMPACT</h4>
 
             <div className="impact" id="impact">
-              {/* <Impact /> */}
-            </div>
+              <Impact />
+              </div>
 
-            <div className="stories" id="stories">
+            
+
+            <div className="stories" id='stories'>
               <h4>ADOPTION STORIES</h4>
               {Stories.map((story) => {
                 console.log(Stories);
