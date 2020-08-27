@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from '../../assets/images/layout/EHS Logo 1.png';
+import logo from '../../assets/images/layout/EHS Logo 1@3x.png';
 import amzn from '../../assets/images/layout/Amazon@3x.png';
 import fb from '../../assets/images/layout/Facebook@3x.png';
 import ig from '../../assets/images/layout/Instagram@3x.png';
