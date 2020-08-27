@@ -1,7 +1,29 @@
+html {
+  scroll-behavior: smooth;
+ }
 .quick {
   color: #000000;
   font-size: 1.36vw;
   position: fixed;
+}
+#mission-link, #impact-link{
+  margin-right:221px;
+  margin-bottom:11px;
+}
+
+#adoption-stories{
+  margin-right:204px;
+  margin-bottom:11px;
+  white-space:nowrap;
+}
+
+#leadership{
+  margin-right:215px;
+  margin-bottom:11px;
+}
+
+#locations{
+  margin-right:230px;
 }
 
 .quick-links a {
@@ -9,6 +31,7 @@
   display: block;
   color: #c4c4c4;
 }
+
 
 .default-link {
   text-decoration: none;
