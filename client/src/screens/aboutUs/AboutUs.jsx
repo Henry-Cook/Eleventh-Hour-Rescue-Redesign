@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../components/layout/Layout.jsx";
 import Locations from "../../components/locations/Locations";
-
+// import Impact from "../../components/impact/Impact";
 import QuickLinks from "../../components/quicklinks/QuickLinks";
 import { getStories } from "../../services/stories";
 import "./aboutus.css";
-
 
 //Will probably need to pass props for the locations later?
 export default function AboutUs(props) {
@@ -27,8 +26,10 @@ export default function AboutUs(props) {
             <QuickLinks />
           </div>
           <div className="everything">
-            <h1 className="aboutus" id="mission">About Us</h1>
-            <div className="mission" >
+            <h1 className="aboutus" id="mission">
+              About Us
+            </h1>
+            <div className="mission">
               <h4>MISSION</h4>
               <p className="mission-text">
                 Eleventh Hour Rescue is a fully registered 501C(3), nonprofit,
@@ -43,11 +44,14 @@ export default function AboutUs(props) {
                 animal lovers everywhere.
               </p>
             </div>
-            <div className="impact" id='impact'>
-              <h4>IMPACT</h4>
-              {/* Something here for call to action circles?  */}
+
+            <h4>IMPACT</h4>
+
+            <div className="impact" id="impact">
+              {/* <Impact /> */}
             </div>
-            <div className="stories" id='stories'>
+
+            <div className="stories" id="stories">
               <h4>ADOPTION STORIES</h4>
               {Stories.map((story) => {
                 console.log(Stories);
@@ -60,11 +64,10 @@ export default function AboutUs(props) {
                 );
               })}
             </div>
-            <div className="leadership" id='leadership'>
+            <div className="leadership" id="leadership">
               <h4>LEADERSHIP</h4>
-
             </div>
-            <div className="locations" id='locations'>
+            <div className="locations" id="locations">
               <h4>LOCATIONS</h4>
               {/* *INSERT LOCATION COMPONENT HERE */}
               <Locations />
