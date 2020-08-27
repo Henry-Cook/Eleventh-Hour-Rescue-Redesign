@@ -1,24 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../../components/layout/Layout.jsx";
 import Locations from "../../components/locations/Locations";
 import Impact from "../../components/impact/Impact";
 import Stories from "../../components/stories/Stories";
-import Leadership from '../../components/leadership/Leadership'
+import Leadership from "../../components/leadership/Leadership";
 import QuickLinks from "../../components/quicklinks/QuickLinks";
 import "./aboutus.css";
 
-
 export default function AboutUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Layout>
         <div className="container">
           <div className="quick-links">
             <QuickLinks />
-
           </div>
           <div className="everything">
-            <h1 className="aboutus" id="mission">
+            <a id="mission1"></a>
+            <h1 className="aboutus" id="mission1">
               About Us
             </h1>
             <div className="mission">
@@ -37,28 +40,28 @@ export default function AboutUs() {
               </p>
             </div>
 
-           
-            <div className="impact" id="impact">
+            <a id="impact1"></a>
             <h4>IMPACT</h4>
+            <div className="impact" id="impact1">
               <Impact />
             </div>
 
-            
-            <div className="stories" id="stories">
+            <a id="stories1"></a>
             <h4>ADOPTION STORIES</h4>
+            <div className="stories" id="stories1">
               <Stories />
             </div>
 
-            
-            <div className="leadership" id="leadership">
+            <a id="leadership1"></a>
             <h4>LEADERSHIP</h4>
+            <div className="leadership" id="leadership1">
               <Leadership />
             </div>
 
-            <div className="locations" id="locations">
+            <a id="locations1"></a>
+            <div className="locations" id="locations1">
               <h4>LOCATIONS</h4>
               <Locations />
-              
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ export default function QuickLinks() {
           <li>Quick Links</li>
         </h4>
         <a
-          href="#mission"
+          href="#mission1"
           onClick={(e) => {
             updateDefaultLink("mission");
           }}
@@ -20,12 +20,13 @@ export default function QuickLinks() {
             className={
               defaultLink === "mission" ? "quick-links-clicked" : "default-link"
             }
-          id ='mission-link'>
+            id="mission-link"
+          >
             Mission
           </li>
         </a>
         <a
-          href="#impact"
+          href="#impact1"
           onClick={() => {
             updateDefaultLink("impact");
           }}
@@ -34,12 +35,13 @@ export default function QuickLinks() {
             className={
               defaultLink === "impact" ? "quick-links-clicked" : "default-link"
             }
-          id='impact-link'>
+            id="impact-link"
+          >
             Impact
           </li>
         </a>
         <a
-          href="#stories"
+          href="#stories1"
           onClick={() => {
             updateDefaultLink("stories");
           }}
@@ -47,13 +49,14 @@ export default function QuickLinks() {
           <li
             className={
               defaultLink === "stories" ? "quick-links-clicked" : "default-link"
-            } id='adoption-stories'
+            }
+            id="adoption-stories"
           >
             Adoption Stories
           </li>
         </a>
         <a
-          href="#leadership"
+          href="#leadership1"
           onClick={() => {
             updateDefaultLink("leadership");
           }}
@@ -64,13 +67,13 @@ export default function QuickLinks() {
                 ? "quick-links-clicked"
                 : "default-link"
             }
-            id='leadership'
+            id="leadership"
           >
             Leadership
           </li>
         </a>
         <a
-          href="#locations"
+          href="#locations1"
           onClick={() => {
             updateDefaultLink("locations");
           }}
@@ -81,7 +84,7 @@ export default function QuickLinks() {
                 ? "quick-links-clicked"
                 : "default-link"
             }
-            id='locations'
+            id="locations"
           >
             Locations
           </li>

@@ -18,13 +18,11 @@
   grid-row: 1;
 }
 
-
-
 .mission-text {
   text-align: left;
 }
 
-#mission::before, #impact::before, #stories::before, #leadship::before, #locations::before {
+#mission1::before, #impact1::before, #stories1::before, #leadship1::before, #locations::before {
   display: block;
   content: " ";
   margin-top: -17vh;
@@ -46,7 +44,7 @@ p {
   font-size: 1.2vw;
 }
 
-@media screen and (max-height: 1366px) and (orientation: portrait) {
+/* @media screen and (max-height: 1366px) and (orientation: portrait) {
   #mission::before, #impact::before, #stories::before, #leadship::before, #locations::before {
   margin-top: -20vh;
   height: 20vh;
@@ -57,4 +55,9 @@ p {
   margin-top: -9vh;
   height: 9vh;
   }
-}
+} */
+
+/* #impactScroll {
+  position: absolute;
+  top
+} */
