@@ -2,8 +2,8 @@
 /* FULL FORM  */
 
 .form-container {
-  height: 844px;
-  width: 1002px;
+  /* height: 844px; */
+  width: 69.67vw;
   border: 1px solid #c4c4c4;
   margin-top: 22.7px;
   border-radius: 5px;
@@ -143,7 +143,7 @@
 }
 
 .billing-info-title {
-  font-size: 0.989vw;
+  font-size: 19px;
   font-family: "Assistant", sans-serif;
   color: #00a1f8;
   margin-bottom: 3px;
@@ -196,11 +196,12 @@
   background-color: #00a1f8;
   border-radius: 5px;
   font-family: "Assistant", sans-serif;
-  font-size: 0.989vw;
+  font-size: 19px;
   font-weight: 700;
   color: #fffdfd;
   border: none;
   transition: ease-in-out 0.1s;
+  margin-bottom: 30px;
 }
 
 .donate-btn:hover {
@@ -221,14 +222,45 @@
   position: absolute;
   right: 35px;
   top: 17px;
-  width: 161px;
+  width: 161;
   height: 32px;
 }
 
-/* .asterix {
-  margin: 0;
-  display: block;
-  color: #f8004f;
-  left: 200px;
-  z-index: -5;
-} */
+@media screen and (max-width: 750px) {
+  .card-verify {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-container {
+    height: auto;
+    width: 69.67vw;
+    border: 1px solid #c4c4c4;
+    margin-top: 22.7px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+  .state-select {
+    height: 56px;
+    width: 100%;
+    margin-right: 0.85%;
+    border: 1px solid #c4c4c4;
+    font-size: 19px;
+    color: #c4c4c4;
+    text-indent: 34px;
+    margin-bottom: 16px;
+    background: url(../../assets/images/donate/asterix2.png) no-repeat;
+    background-position: 16px center;
+    background-size: 12px 12px;
+  }
+  .donate-btn {
+    margin-bottom: 30px;
+    width: auto;
+  }
+  .CC-img {
+    display: none;
+  }
+  .paypal-img {
+    display: none;
+  }
+}
