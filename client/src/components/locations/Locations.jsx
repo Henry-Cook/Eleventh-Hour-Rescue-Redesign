@@ -85,10 +85,10 @@ export default function Locations() {
         <br />
         <br/>
         <span className='left'>
-          <strong>Sat</strong>11am-4pm
+          <strong>Sat </strong>11am-4pm
         </span>
         <span className='left'>
-          <strong>Sun</strong> 11am-4pm
+          <strong>Sun </strong> 11am-4pm
         </span>
         <p>
           <strong>No direct phone</strong>
