@@ -15,7 +15,7 @@ header {
 .header-content {
   position: absolute;
   bottom: 0;
-  left: 12.5vw;
+  left: 10vw;
   display: grid;
   grid-template-columns: 12.75vw auto;
   grid-auto-rows: 10.5vh 4.5;
@@ -110,7 +110,7 @@ li {
 
 /* this is where i need to put in the hamburger, 
 for mobile devices and tiny monitors*/
-@media screen and (max-height: 899px) {
+/* @media screen and (max-height: 899px) {
   header {
     height: 8vh;
   }
@@ -132,7 +132,7 @@ for mobile devices and tiny monitors*/
   .ehr-name {
     font-size: 0;
     line-height: 0;
-  }
+  } */
   /* .navi {
     height: 0;
     width: 0;
