@@ -1,33 +1,35 @@
 .leadership {
   display: grid;
+  grid-gap: 2vw;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-
 }
-
-.leadership h3 {
+.leadershipCard {
+  display: inline-block;
+}
+.leadershipCard h3 {
   display: revert;
   color: #00a1f8;
   font-size: 1.12vw;
   font-weight: 200;
 }
-
-#leadershipCard img {
-  grid-column-start: 1;
+.leadershipCard img {
   width: 6.94vw;
   height: 6.94vw;
+  position: absolute;
+  padding: 0;
 }
-
-#leadershipCard h2, h3, p {
-  grid-column-start: 2;
-  padding-left: 0.56vw;
-  display: block;
+.leadershipCard p, h3 {
+  padding-left: 8vw;
+  text-align: left;
 }
-
-#leadershipCard {
-  display: grid;
-  justify-content: left;
-  grid-template-columns: 6.94vw 19.1vw;
-  grid-template-rows: 0;
-
+.leadershipCard p {
+  padding-top: 1vw;
+}
+.leadershipCard h3 {
+  margin: 0;
+}
+.leadershipCard h2 {
+  text-align: left !important;
+  padding-left: 8vw;
 }
