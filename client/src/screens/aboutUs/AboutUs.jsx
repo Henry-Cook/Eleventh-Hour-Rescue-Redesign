@@ -37,18 +37,21 @@ export default function AboutUs(props) {
               </p>
             </div>
 
-            <h4>IMPACT</h4>
+           
             <div className="impact" id="impact">
+            <h4>IMPACT</h4>
               <Impact />
             </div>
 
-            <h4>ADOPTION STORIES</h4>
+            
             <div className="stories" id="stories">
+            <h4>ADOPTION STORIES</h4>
               <Stories />
             </div>
 
-            <h4>LEADERSHIP</h4>
+            
             <div className="leadership" id="leadership">
+            <h4>LEADERSHIP</h4>
               <Leadership />
             </div>
 
