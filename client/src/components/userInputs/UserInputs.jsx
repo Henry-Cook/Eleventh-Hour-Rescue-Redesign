@@ -6,18 +6,27 @@ import addSpace from "../../utils/addSpace";
 import paypal from "../../assets/images/donate/paypal2.png";
 import CC from "../../assets/images/donate/cc.png";
 import asterix from "../../assets/images/donate/Red Asterisk@3x.png";
+import { useHistory } from "react-router-dom";
 
 function UserInputs(props) {
+  let history = useHistory();
   const [disabled, setDisabled] = useState(true);
+  const [btnDisabled, setBtnDisabled] = useState(true);
   const disabledRadioBool = useContext(DisableRadio);
 
   const handleRadio = (e) => {
     if (e.target.value === "paypal") {
       setDisabled(true);
+      setBtnDisabled(false);
     } else if (e.target.value === "card") {
       setDisabled(false);
+      setBtnDisabled(false);
     }
   };
+
+  // const handlePaypalclick = () => {
+  //   history.push(`#donate-btn`);
+  // };
 
   return (
     <>
@@ -29,6 +38,7 @@ function UserInputs(props) {
               type="radio"
               value="paypal"
               onClick={handleRadio}
+              // onMouseDown={() => handlePaypalclick}
               name="select"
               disabled={disabledRadioBool === true ? true : false}
             />
@@ -179,7 +189,12 @@ function UserInputs(props) {
             </div>
           </div>
           <div className="donate-btn-div">
-            <button className="donate-btn" type="submit" disabled={disabled}>
+            <button
+              className="donate-btn"
+              type="submit"
+              disabled={btnDisabled}
+              id="donate-btn"
+            >
               DONATE NOW
             </button>
           </div>

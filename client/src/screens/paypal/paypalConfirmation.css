@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700&display=swap');
+.bar {
+  height: 7.55vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.paypal-logo {
+  margin-left: 12.88vw;
+  margin-top: 20px;
+  height: 30px;
+  width: 121px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  height: 92.45vh;
+  width: 100vw;
+  background-color: #f5f7fa;
+}
+
+.confirmation-box {
+  margin-top: 129px;
+}
+
+.white-box {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.nav-back {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.back-to-donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 350px;
+  background-color: #316fb4;
+  margin: 25px auto;
+  height: 50px;
+  font-family: 'Assistant', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration-line: none;
+  transition: all .2s ease-in-out;
+}
+
+.back-to-donate:hover {
+  transform: scale(1.1);
+}
+
+.back-to-home {
+  color: #316fb4;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  text-decoration-line: none;
+  font-size: 17px;
+}
+
+.back-to-home:hover {
+  text-decoration-line: underline;
+}
