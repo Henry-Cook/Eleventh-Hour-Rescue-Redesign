@@ -7,8 +7,8 @@ import Leadership from '../../components/leadership/Leadership'
 import QuickLinks from "../../components/quicklinks/QuickLinks";
 import "./aboutus.css";
 
-//Will probably need to pass props for the locations later?
-export default function AboutUs(props) {
+
+export default function AboutUs() {
   return (
     <>
       <Layout>
@@ -57,7 +57,6 @@ export default function AboutUs(props) {
 
             <div className="locations" id="locations">
               <h4>LOCATIONS</h4>
-              {/* *INSERT LOCATION COMPONENT HERE */}
               <Locations />
               
             </div>
