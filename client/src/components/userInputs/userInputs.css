@@ -77,6 +77,9 @@
   font-size: 19px;
   color: #c4c4c4;
   text-indent: 34px;
+  background: url(../../assets/images/donate/asterix2.png) no-repeat;
+  background-position: 16px center;
+  background-size: 12px 12px;
 }
 
 .number::placeholder {
@@ -100,6 +103,9 @@
   color: #c4c4c4;
   text-indent: 34px;
   margin-bottom: 16px;
+  background: url(../../assets/images/donate/asterix2.png) no-repeat;
+  background-position: 16px center;
+  background-size: 12px 12px;
 }
 
 .verify-one::placeholder {
@@ -116,6 +122,9 @@
   color: #c4c4c4;
   text-indent: 34px;
   margin-bottom: 16px;
+  background: url(../../assets/images/donate/asterix2.png) no-repeat;
+  background-position: 16px center;
+  background-size: 12px 12px;
 }
 
 .verify-two::placeholder {
@@ -149,6 +158,9 @@
   color: #c4c4c4;
   text-indent: 34px;
   margin-bottom: 16px;
+  background: url(../../assets/images/donate/asterix2.png) no-repeat;
+  background-position: 16px center;
+  background-size: 12px 12px;
 }
 
 .input-email {
@@ -159,6 +171,9 @@
   color: #c4c4c4;
   text-indent: 34px;
   margin-bottom: 7.1%;
+  background: url(../../assets/images/donate/asterix2.png) no-repeat;
+  background-position: 16px center;
+  background-size: 12px 12px;
 }
 
 .input-email::placeholder {
@@ -195,3 +210,25 @@
 .donate-btn:focus {
   transform: scale(0.95);
 }
+
+.paypal-img {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+}
+
+.CC-img {
+  position: absolute;
+  right: 35px;
+  top: 17px;
+  width: 161px;
+  height: 32px;
+}
+
+/* .asterix {
+  margin: 0;
+  display: block;
+  color: #f8004f;
+  left: 200px;
+  z-index: -5;
+} */
