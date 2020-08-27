@@ -41,6 +41,7 @@ export default function AboutUs(props) {
             <div className="impact" id="impact">
               <Impact />
             </div>
+
             <h4>ADOPTION STORIES</h4>
             <div className="stories" id="stories">
               <Stories />
@@ -55,6 +56,7 @@ export default function AboutUs(props) {
               <h4>LOCATIONS</h4>
               {/* *INSERT LOCATION COMPONENT HERE */}
               <Locations />
+              
             </div>
           </div>
         </div>
