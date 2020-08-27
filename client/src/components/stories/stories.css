@@ -1,0 +1,7 @@
+.stories {
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0;
+  grid-column-gap: 3.75vw;
+}

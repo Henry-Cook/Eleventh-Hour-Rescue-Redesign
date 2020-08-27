@@ -12,8 +12,6 @@ export default function Impact() {
           <ActionCard
             style={{
               backgroundColor: "#e1e1e1",
-              display: "flex",
-              flexDirection: 'column',
               padding: '1vh'
             }}
 
