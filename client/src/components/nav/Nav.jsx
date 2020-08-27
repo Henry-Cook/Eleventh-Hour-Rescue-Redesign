@@ -28,16 +28,16 @@ const Nav = () => {
                 <NavLink to="/donate" activeClassName="currentTab">Donate</NavLink>
               </li>
               <li className="page-links">
-                <NavLink to="/404" activeClassName="currentTab">Adopt</NavLink>
+                <NavLink to="/404" >Adopt</NavLink>
               </li>
               <li className="page-links">
-                <NavLink to="/404" activeClassName="currentTab">Volunteer</NavLink>
+                <NavLink to="/404" >Volunteer</NavLink>
               </li>
               <li className="page-links">
-                <NavLink to="/404" activeClassName="currentTab">Foster</NavLink>
+                <NavLink to="/404" >Foster</NavLink>
               </li>
               <li className="page-links">
-                <NavLink to="/404" activeClassName="currentTab">Events</NavLink>
+                <NavLink to="/404" >Events</NavLink>
               </li>
 
               <li className="social-media-links">
