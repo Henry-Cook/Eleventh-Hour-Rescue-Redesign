@@ -107,38 +107,3 @@ li {
     grid-auto-rows: 5.5vh 3.5vh;
   }
 }
-
-/* this is where i need to put in the hamburger, 
-for mobile devices and tiny monitors*/
-/* @media screen and (max-height: 899px) {
-  header {
-    height: 8vh;
-  }
-
-  .header-content {
-    width: 100%;
-    left: 0;
-    top: .75vh;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-  }
-
-  .ehr-logo {
-    max-height: 7.75vh;
-    max-width: auto;
-  }
-
-  .ehr-name {
-    font-size: 0;
-    line-height: 0;
-  } */
-  /* .navi {
-    height: 0;
-    width: 0;
-  }
-  .navLink {
-    height: 0;
-    width: 0;
-  } 
-} */
