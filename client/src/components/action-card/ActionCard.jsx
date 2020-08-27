@@ -1,6 +1,6 @@
 import React from "react";
 
-import './action-card.css'
+import "./action-card.css";
 
 export default function InfoCard(props) {
   return (

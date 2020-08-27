@@ -6,7 +6,6 @@ import QuickLinks from "../../components/quicklinks/QuickLinks";
 import { getStories } from "../../services/stories";
 import "./aboutus.css";
 
-
 //Will probably need to pass props for the locations later?
 export default function AboutUs(props) {
   const [Stories, updateStories] = useState([]);
@@ -27,8 +26,10 @@ export default function AboutUs(props) {
             <QuickLinks />
           </div>
           <div className="everything">
-            <h1 className="aboutus" id="mission">About Us</h1>
-            <div className="mission" >
+            <h1 className="aboutus" id="mission">
+              About Us
+            </h1>
+            <div className="mission">
               <h4>MISSION</h4>
               <p className="mission-text">
                 Eleventh Hour Rescue is a fully registered 501C(3), nonprofit,
@@ -66,11 +67,10 @@ export default function AboutUs(props) {
                 );
               })}
             </div>
-            <div className="leadership" id='leadership'>
+            <div className="leadership" id="leadership">
               <h4>LEADERSHIP</h4>
-
             </div>
-            <div className="locations" id='locations'>
+            <div className="locations" id="locations">
               <h4>LOCATIONS</h4>
               {/* *INSERT LOCATION COMPONENT HERE */}
               <Locations />

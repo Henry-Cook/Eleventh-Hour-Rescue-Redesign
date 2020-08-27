@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import Selector from "../../components/selector/Selector";
+import Selector from "../selector/Selector";
 import UserInput from "../userInputs/UserInputs";
 import { createDonation } from "../../services/donations";
 import { useHistory } from "react-router-dom";
+export const DisableRadio = React.createContext();
 
 function Form() {
+  let [disabledRadioValue, setDisable] = useState(true);
   const [choices, setChoices] = useState({
     type: "monthly",
     amount: "",
@@ -32,6 +34,15 @@ function Form() {
   };
 
   const handleAmountClick = (e) => {
+    setDisable(false);
+    setChoices({
+      ...choices,
+      amount: e.target.value,
+    });
+  };
+
+  const handleAmountOther = (e) => {
+    setDisable(false);
     setChoices({
       ...choices,
       amount: e.target.value,
@@ -57,11 +68,14 @@ function Form() {
 
   return (
     <>
-      <Selector
-        handleTypeClick={handleTypeClick}
-        handleAmountClick={handleAmountClick}
-      />
-      <UserInput handleChange={handleChange} addNew={donate} />
+      <DisableRadio.Provider value={disabledRadioValue}>
+        <Selector
+          handleTypeClick={handleTypeClick}
+          handleAmountClick={handleAmountClick}
+          handleAmountOther={handleAmountOther}
+        />
+        <UserInput handleChange={handleChange} addNew={donate} />
+      </DisableRadio.Provider>
     </>
   );
 }

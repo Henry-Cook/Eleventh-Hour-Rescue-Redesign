@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
-
-
 .container {
   margin: 0 auto;
   display: grid;
@@ -9,6 +7,7 @@
   padding-top: 1vh;
   font-family: 'Assistant', sans-serif;
 }
+
 .quick-links {
   grid-column: 2;
   grid-row: 1;
@@ -23,16 +22,12 @@
   text-align: left;
 }
 
-#mission::before,
-#impact::before,
-#stories::before,
-#leadship::before,
-#locations::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -17vh; 
-  height: 17vh; 
-  visibility: hidden; 
+#mission::before, #impact::before, #stories::before, #leadship::before, #locations::before {
+  display: block;
+  content: " ";
+  margin-top: -17vh;
+  height: 17vh;
+  visibility: hidden;
   pointer-events: none;
 }
 
