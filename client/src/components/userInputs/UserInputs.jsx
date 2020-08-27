@@ -3,7 +3,6 @@ import { DisableRadio } from "../form/Form";
 import "./userInputs.css";
 import states from "./state";
 import addSpace from "../../utils/addSpace";
-import { set } from "mongoose";
 import paypal from "../../assets/images/donate/paypal2.png";
 import CC from "../../assets/images/donate/cc.png";
 import asterix from "../../assets/images/donate/Red Asterisk@3x.png";
