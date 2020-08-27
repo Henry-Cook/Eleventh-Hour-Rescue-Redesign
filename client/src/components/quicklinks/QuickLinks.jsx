@@ -3,54 +3,7 @@ import "./quicklinks.css";
 
 export default function QuickLinks() {
   const [defaultLink, updateDefaultLink] = useState("mission");
-  // const [missionLinkColor, updateMissionLinkColor] = useState("");
-  // const [impactLinkColor, updateImpactLinkColor] = useState("");
-  // const [storiesLinkColor, updateStoriesLinkColor] = useState("");
-  // const [leadershipLinkColor, updateLeadershipLinkColor] = useState("");
-  // const [locationsLinkColor, updateLocationsLinkColor] = useState("");
 
-  // const linkColor = (currentLinkColor) => {
-  //   return currentLinkColor !== "clicked" ? "clicked" : "";
-  // };
-
-  // const handleClick = (e) => {
-  //   updateMissionLinkColor(linkColor(e));
-  //   updateImpactLinkColor("");
-  //   updateStoriesLinkColor("");
-  //   updateLeadershipLinkColor("");
-  //   updateLocationsLinkColor("");
-  // };
-  // const handleImpactClick = (e) => {
-  //   updateImpactLinkColor(linkColor(e));
-  //   updateMissionLinkColor("");
-  //   updateStoriesLinkColor("");
-  //   updateLeadershipLinkColor("");
-  //   updateLocationsLinkColor("");
-  // };
-
-  // const handleStoriesClick = (e) => {
-  //   updateStoriesLinkColor(linkColor(e));
-  //   updateMissionLinkColor("");
-  //   updateImpactLinkColor("");
-  //   updateLeadershipLinkColor("");
-  //   updateLocationsLinkColor("");
-  // };
-
-  // const handleLeadershipClick = (e) => {
-  //   updateLeadershipLinkColor(linkColor(e));
-  //   updateMissionLinkColor("");
-  //   updateImpactLinkColor("");
-  //   updateStoriesLinkColor("");
-  //   updateLocationsLinkColor("");
-  // };
-
-  // const handleLocationsClick = (e) => {
-  //   updateLocationsLinkColor(linkColor(e));
-  //   updateMissionLinkColor("");
-  //   updateImpactLinkColor("");
-  //   updateStoriesLinkColor("");
-  //   updateLeadershipLinkColor("");
-  // };
   return (
     <aside className="quick">
       <ul className="quick-links">
@@ -67,7 +20,7 @@ export default function QuickLinks() {
             className={
               defaultLink === "mission" ? "quick-links-clicked" : "default-link"
             }
-          >
+          id ='mission-link'>
             Mission
           </li>
         </a>
@@ -81,7 +34,7 @@ export default function QuickLinks() {
             className={
               defaultLink === "impact" ? "quick-links-clicked" : "default-link"
             }
-          >
+          id='impact-link'>
             Impact
           </li>
         </a>
@@ -94,7 +47,7 @@ export default function QuickLinks() {
           <li
             className={
               defaultLink === "stories" ? "quick-links-clicked" : "default-link"
-            }
+            } id='adoption-stories'
           >
             Adoption Stories
           </li>
@@ -111,6 +64,7 @@ export default function QuickLinks() {
                 ? "quick-links-clicked"
                 : "default-link"
             }
+            id='leadership'
           >
             Leadership
           </li>
@@ -127,6 +81,7 @@ export default function QuickLinks() {
                 ? "quick-links-clicked"
                 : "default-link"
             }
+            id='locations'
           >
             Locations
           </li>
