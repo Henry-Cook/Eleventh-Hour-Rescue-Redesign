@@ -52,9 +52,9 @@ export default function AboutUs() {
               <Stories />
             </div>
 
-            <a id="leadership1"></a>
+            <a id="leadership5"></a>
             <h4>LEADERSHIP</h4>
-            <div className="leadership" id="leadership1">
+            <div className="leadership">
               <Leadership />
             </div>
 

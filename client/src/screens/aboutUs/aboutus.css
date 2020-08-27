@@ -22,7 +22,7 @@
   text-align: left;
 }
 
-#mission1::before, #impact1::before, #stories1::before, #leadship1::before, #locations::before {
+#mission1::before, #impact1::before, #stories1::before, #leadeship5::before, #locations::before {
   display: block;
   content: " ";
   margin-top: -17vh;
@@ -61,3 +61,7 @@ p {
   position: absolute;
   top
 } */
+
+.locations {
+  margin-bottom: 74px;
+}

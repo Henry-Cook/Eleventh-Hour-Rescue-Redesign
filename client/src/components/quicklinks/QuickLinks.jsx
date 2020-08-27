@@ -56,7 +56,7 @@ export default function QuickLinks() {
           </li>
         </a>
         <a
-          href="#leadership1"
+          href="#leadership5"
           onClick={() => {
             updateDefaultLink("leadership");
           }}
