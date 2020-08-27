@@ -39,17 +39,13 @@ html {
   color: #c4c4c4;
 }
 
-/* .quick-links a:active {
-  color: #00a1f8;
-} */
+
 
 .quick-links-clicked {
   color: #00a1f8;
 }
 
-/* .mission a:visited{
-  color:#00a1f8;
-} */
+
 
 .clicked {
   color: #00a1f8 !important;
