@@ -2,7 +2,7 @@
 .container {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 57vw 15vw;
+  grid-template-columns: 62vw 15vw;
   grid-gap: 3vw;
   padding-top: 1vh;
   font-family: 'Assistant', sans-serif;
@@ -17,6 +17,8 @@
   grid-column: 1;
   grid-row: 1;
 }
+
+
 
 .mission-text {
   text-align: left;
@@ -42,4 +44,17 @@ h4 {
 
 p {
   font-size: 1.2vw;
+}
+
+@media screen and (max-height: 1366px) and (orientation: portrait) {
+  #mission::before, #impact::before, #stories::before, #leadship::before, #locations::before {
+  margin-top: -20vh;
+  height: 20vh;
+  }
+}
+@media screen and (max-height: 1366px) and (orientation: portrait) {
+  #mission::before, #impact::before, #stories::before, #leadship::before, #locations::before {
+  margin-top: -9vh;
+  height: 9vh;
+  }
 }
