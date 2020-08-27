@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  grid-row-gap: 1.8vw;
-  grid-column-gap: 2.5vw;
+  grid-gap: 2vw;
   margin: 0 1.8vw; 
 }
 
