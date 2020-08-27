@@ -36,7 +36,7 @@ footer h4 {
   }
 }
 
-/* this is where i need to put in the hamburger */
+/* this is where i need to put in the hamburger
 @media screen and (max-height: 899px) {
   .layout-children {
     margin-top: 8vh;
@@ -52,4 +52,4 @@ footer h4 {
     font-size: 0;
     line-height: 0;
   }
-}
+} */
