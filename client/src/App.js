@@ -5,6 +5,7 @@ import AboutUs from "./screens/aboutUs/AboutUs";
 import Donate from "./screens/donate/Donate.jsx";
 import NotFound from "./screens/notFound/NotFound.jsx";
 import Confirmation from "./screens/confirmation/Confirmation";
+import PaypalConfirm from "./screens/paypal/PaypalConfirm";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/donate" component={Donate} />
         <Route exact path="/404" component={NotFound} />
         <Route exact path="/confirmation/:id" component={Confirmation} />
+        <Route exact path="/paypalConfirm" component={PaypalConfirm} />
       </Switch>
     </div>
   );
