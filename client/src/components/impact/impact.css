@@ -4,10 +4,7 @@
   grid-template-rows: 50% 50%;
   grid-row-gap: 1.8vw;
   grid-column-gap: 2.5vw;
-  padding: 1.8vw;
-  margin-top: 0;
-  margin-bottom: 1.8vw;
-  
+  margin: 0 1.8vw; 
 }
 
 .impactCards p {
