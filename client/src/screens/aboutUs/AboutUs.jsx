@@ -4,7 +4,6 @@ import Locations from "../../components/locations/Locations";
 import Impact from "../../components/impact/Impact";
 import Stories from "../../components/stories/Stories";
 import QuickLinks from "../../components/quicklinks/QuickLinks";
-
 import "./aboutus.css";
 
 //Will probably need to pass props for the locations later?
@@ -15,6 +14,7 @@ export default function AboutUs(props) {
         <div className="container">
           <div className="quick-links">
             <QuickLinks />
+
           </div>
           <div className="everything">
             <h1 className="aboutus" id="mission">
