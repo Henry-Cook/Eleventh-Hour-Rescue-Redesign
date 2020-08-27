@@ -22,7 +22,7 @@ export default function Stories() {
       stories.map((story, i) => {
         return (
           <ActionCard
-            id={'story'}
+            id={`story${i+1}`}
             image={`${story.imgURL}`}
             action={story.name}
             detail={story.story} />
