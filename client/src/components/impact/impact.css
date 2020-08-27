@@ -3,16 +3,19 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   grid-row-gap: 1.8vw;
-  grid-column-gap: 1.8vw;
+  grid-column-gap: 2.5vw;
   margin: 1.8vw;
+  margin-top: 0;
 }
 
 .impactCards p, h2 {
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .impactCards img {
+  margin: 0.5vh auto;
+  margin-bottom: 1.041vw;
   width: 11.81vw;
 }
 .impactCards p {
@@ -24,7 +27,7 @@
   color: #00a1f8;
 }
 
-#impact1 p {
+#impact1 p  {
   width: 16.74vw;
 }
 #impact2 p {
@@ -36,42 +39,6 @@
 #impact4 p {
   width: 20.97vw;
 }
-
-
-/* .impactCard p, h2 {
-font-size: 1.11vw;
-text-align: center;
+#impact4 img {
+  margin-bottom: 0.5vw;
 }
-
-.impactCard h2 {
-  color: #00a1f8;
-}
-.impactCard img {
-  margin: 0 auto;
-  width: 11.81vw; 
-}
-
-#impact2 {
-  grid-column-end: 3;
-} */
-
-/* #impact1 p {
-  margin: 0 auto;
-  text-align: center;
-  width: 17vw;
-  bottom: 1.3vh;
-}
-#impact1 img {
-  margin: 0 auto;
-}
-#impact2 p {
-  width: 19vw;
-}
-#impact3 p {
-  grid-row-start: 2;
-  width: 22vw;
-}
-#impact4 p {
-  grid-row-start: 2;
-  width: 21vw;
-} */
