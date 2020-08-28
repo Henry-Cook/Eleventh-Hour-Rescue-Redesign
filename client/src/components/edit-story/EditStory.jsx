@@ -22,12 +22,12 @@ export default function EditStory(props) {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    const id = story._id
-    console.log(story)
-    console.log(id)
-    await updateStory(id, story)
-    window.location.reload(true)
+    e.preventDefault();
+    const id = story._id;
+    console.log(story);
+    console.log(id);
+    await updateStory(id, story);
+    props.updateBool(true);
   };
 
   return (
@@ -35,30 +35,36 @@ export default function EditStory(props) {
       <img src={story.imgURL} />
 
       <form onSubmit={handleSubmit}>
-        <input className="story-image-input"
-        type="text"
+        <input
+          className="story-image-input"
+          type="text"
           value={story.imgURL}
           placeholder="Image Link"
           name="imgURL"
-          onChange={handleChange} />
+          onChange={handleChange}
+        />
 
-        <input className="story-name-input"
-        type="text"
+        <input
+          className="story-name-input"
+          type="text"
           value={story.name}
           placeholder="Name"
           name="name"
-          onChange={handleChange} />
+          onChange={handleChange}
+        />
 
-        <textarea cols='30'
-          rows='6'
-          maxlength='500'
+        <textarea
+          cols="30"
+          rows="6"
+          maxlength="500"
           value={story.story}
           name="story"
           onChange={handleChange}
         />
 
-        <button className="save-button"
-          type="sumbmit">SAVE</button>
+        <button className="save-button" type="sumbmit">
+          SAVE
+        </button>
       </form>
     </div>
   );

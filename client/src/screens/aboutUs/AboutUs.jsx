@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../../components/layout/Layout.jsx";
 import Locations from "../../components/locations/Locations";
 import Impact from "../../components/impact/Impact";
@@ -8,6 +8,8 @@ import QuickLinks from "../../components/quicklinks/QuickLinks";
 import "./aboutus.css";
 
 export default function AboutUs() {
+  const [bool, setBool] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
