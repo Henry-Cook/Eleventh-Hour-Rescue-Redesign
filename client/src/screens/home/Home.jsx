@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import Layout from "../../components/layout/Layout.jsx";
 import "./home.css";
 
@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <Layout>
       <div className="home">
-
         <img src={homedogs} alt="dogs" id="homedogs" />
         <div className="welcome-message">
           <h1>Welcome</h1>
@@ -26,13 +25,19 @@ export default function Home() {
         <div className="home-links">
           {homeCards.map((card, i) => {
             return (
-              <Link to={`/${card.action.toLowerCase()}`}>
-                <ActionCard id={'homeCard'} action={card.action} image={card.image} />
-                </Link>
-            )
+              <Link
+                className="ctalinks-circle"
+                to={`/${card.action.toLowerCase()}`}
+              >
+                <ActionCard
+                  id={"homeCard"}
+                  action={card.action}
+                  image={card.image}
+                />
+              </Link>
+            );
           })}
         </div>
-
       </div>
     </Layout>
   );

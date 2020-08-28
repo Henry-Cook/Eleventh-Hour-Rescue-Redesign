@@ -4,6 +4,7 @@ import UserInput from "../userInputs/UserInputs";
 import { createDonation } from "../../services/donations";
 import { useHistory } from "react-router-dom";
 export const DisableRadio = React.createContext();
+export const amount = React.createContext();
 
 function Form() {
   let [disabledRadioValue, setDisable] = useState(true);
