@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
-
 .not-found-container {
-  margin: 0 auto;
+  text-align: center;
 }
 
 .not-found {
   font-family: 'Assistant', sans-serif;
-  font-size: 52px;
-  line-height: 52px;
+  font-size: 3.5vw;
+  margin: 100px;
 }

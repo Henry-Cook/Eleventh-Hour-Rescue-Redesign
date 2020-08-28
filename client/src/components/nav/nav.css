@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
-
 header {
   margin: 0 auto;
   font-family: 'Assistant', sans-serif;
@@ -80,11 +79,11 @@ li {
 }
 
 /* for really big screens */
+
 @media screen and (max-height: 1366px) and (orientation: portrait) {
   header {
     height: 20vh;
   }
-
   .header-content {
     grid-template-columns: 12.75vw auto;
     grid-auto-rows: 17vh 3vh;
@@ -97,11 +96,11 @@ li {
 }
 
 /* for large screen tablets in portrait mode */
+
 @media screen and (max-height: 1366px) and (orientation: portrait) {
   header {
     height: 9vh;
   }
-
   .header-content {
     grid-template-columns: 12.75vw auto;
     grid-auto-rows: 5.5vh 3.5vh;

@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
-
-
 .home {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -17,7 +15,6 @@
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: -1;
-
 }
 
 .welcome-message {
@@ -31,7 +28,6 @@
   grid-column-end: -1;
   grid-row-start: 2;
   grid-row-end: 3;
-  
 }
 
 .welcome-message h1 {
@@ -50,7 +46,7 @@
 }
 
 .home-links {
-display: flex;
+  display: flex;
 }
 
 .home-links a {
@@ -59,8 +55,8 @@ display: flex;
 }
 
 .home-links h2 {
-padding: 1.35vh;
-margin: 0;
+  padding: 1.35vh;
+  margin: 0;
   font-size: 1.67vw;
 }
 
@@ -79,4 +75,12 @@ margin: 0;
 
 #homeCard img {
   width: 100%;
+}
+
+.ctalinks-circle {
+  transition: all .2s ease-in-out;
+}
+
+.ctalinks-circle:hover {
+  transform: scale(1.03);
 }

@@ -41,26 +41,26 @@ export default function AboutUs() {
             </div>
 
             <a id="impact1"></a>
-            <h4>IMPACT</h4>
+            <h4 className="impact-title">IMPACT</h4>
             <div className="impact" id="impact1">
               <Impact />
             </div>
 
             <a id="stories1"></a>
-            <h4>ADOPTION STORIES</h4>
+            <h4 className="adoption-title">ADOPTION STORIES</h4>
             <div className="stories" id="stories1">
               <Stories />
             </div>
 
             <a id="leadership5"></a>
-            <h4>LEADERSHIP</h4>
+            <h4 className="leadership-title">LEADERSHIP</h4>
             <div className="leadership">
               <Leadership />
             </div>
 
             <a id="locations1"></a>
             <div className="locations" id="locations1">
-              <h4>LOCATIONS</h4>
+              <h4 className="location-title">LOCATIONS</h4>
               <Locations />
             </div>
           </div>

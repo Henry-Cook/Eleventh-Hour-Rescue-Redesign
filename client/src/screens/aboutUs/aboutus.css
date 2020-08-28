@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@800&display=swap');
 .container {
   margin: 0 auto;
   display: grid;
@@ -34,34 +34,57 @@
 .aboutus {
   text-align: center;
   font-size: 2.64vw;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 800;
 }
 
 h4 {
   font-size: 1.36vw;
+  margin-top: 47px;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 800;
+}
+
+.impact-title {
+  font-size: 1.36vw;
+  margin-top: 47px;
+  margin-bottom: 26px;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 800;
+}
+
+.leadership-title {
+  margin-top: 56px;
+  margin-bottom: 37px;
+}
+
+.adoption-title {
+  margin-top: 67px;
 }
 
 p {
   font-size: 1.2vw;
 }
 
-/* @media screen and (max-height: 1366px) and (orientation: portrait) {
-  #mission::before, #impact::before, #stories::before, #leadship::before, #locations::before {
-  margin-top: -20vh;
-  height: 20vh;
-  }
-}
-@media screen and (max-height: 1366px) and (orientation: portrait) {
-  #mission::before, #impact::before, #stories::before, #leadship::before, #locations::before {
-  margin-top: -9vh;
-  height: 9vh;
-  }
-} */
-
-/* #impactScroll {
-  position: absolute;
-  top
-} */
-
 .locations {
   margin-bottom: 74px;
+}
+
+.location-title {
+  margin-bottom: 36px;
+  margin-top: 56px;
+}
+
+@media screen and (max-height: 1366px) and (orientation: portrait) {
+  #mission::before, #impact::before, #stories::before, #leadship::before, #locations::before {
+    margin-top: -20vh;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-height: 1366px) and (orientation: portrait) {
+  #mission::before, #impact::before, #stories::before, #leadship::before, #locations::before {
+    margin-top: -9vh;
+    height: 9vh;
+  }
 }

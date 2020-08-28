@@ -33,11 +33,21 @@
 }
 
 .header-text {
-  font-size: 16px;
+  font-size: 1.1111111111111112VW;
   color: #000;
   font-family: "Assistant", sans-serif;
   font-weight: 400;
   width: 54%;
   margin: 0 0 64.6px 0;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .header-title {
+    font-size: 4.1vw;
+  }
+  .header-text {
+    font-size: 1.8VW;
+    width: 70%;
+  }
 }

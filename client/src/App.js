@@ -15,7 +15,10 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/donate" component={Donate} />
-        <Route exact path="/404" component={NotFound} />
+        <Route exact path="/adopt" component={NotFound} />
+        <Route exact path="/volunteer" component={NotFound} />
+        <Route exact path="/foster" component={NotFound} />
+        <Route exact path="/events" component={NotFound} />
         <Route exact path="/confirmation/:id" component={Confirmation} />
         <Route exact path="/paypalConfirm" component={PaypalConfirm} />
       </Switch>
