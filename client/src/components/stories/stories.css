@@ -7,6 +7,7 @@
 .stories h2 {
   margin-top: 0.5vw;
   margin-bottom: 1vw;
+  text-transform: uppercase;
 }
 
 .stories img {
@@ -24,7 +25,6 @@
   font-size: 1.2vw;
   color: #00a1f8;
   text-decoration: underline;
-  width: 5vw;
 }
 
 .stories button:hover {
