@@ -1,7 +1,6 @@
 .stories {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
   grid-column-gap: 3.75vw;
 }
 
@@ -13,6 +12,25 @@
 .stories img {
   margin: 0 auto;
 }
+
+.edit-story-button {
+  background-color: white;
+  border-style: none;
+  padding: 1vw;
+  font-size: 1.2vw;
+  color: #00a1f8;
+  text-decoration: underline;
+  width: 5vw;
+}
+
+.stories button:hover {
+  cursor: pointer;
+}
+
+.edit-story-button:focus {
+  outline: none;
+}
+
 
 #story1, #edit-left, #constant-left, #button1 {
   width: 24.7vw;

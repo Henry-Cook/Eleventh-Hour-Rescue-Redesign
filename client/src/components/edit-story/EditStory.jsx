@@ -1,62 +1,68 @@
-import React, { useState } from "react";
-import {updateStory} from '../../services/stories.js'
-
+import React, { useState, useEffect } from "react";
+import { useHistory } from 'react-router-dom'
+import { updateStory, getStory } from "../../services/stories.js";
 import "./edit-story.css";
 
 export default function EditStory(props) {
+  const [story, setStory] = useState({});
 
-  const [story, setStory] = useState({
-    imgURL: props.image,
-    name: props.action,
-    story: props.detail
-  })
-  
+  const history = useHistory()
+
+  useEffect(() => {
+    const fetchStory = async () => {
+      const story = await getStory(props.id);
+      setStory(story);
+    };
+    fetchStory();
+  }, {});
+
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     setStory({
-            ...story,
-            [name]: value
-    })
-  }
+      ...story,
+      [name]: value,
+    });
+  };
 
-  
-  const handleSubmit = async (id) => {
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const id = props.id
+    console.log(story)
+    console.log(id)
     await updateStory(id, story)
-}
-  
+    window.location.reload(true)
+  };
 
   return (
     <div className="edit-story">
-
       <img src={story.imgURL} />
 
-      <form onSubmit={(e) => {
-        e.preventDefault()
-        handleSubmit(story._id)
-      }}>
-
-        <input
+      <form onSubmit={handleSubmit}>
+        <input className="story-image-input"
+        type="text"
           value={story.imgURL}
-          name='imgURL'
-          onChange={handleChange}
-        />
+          placeholder="Image Link"
+          name="imgURL"
+          onChange={handleChange} />
 
-        <input
+        <input className="story-name-input"
+        type="text"
           value={story.name}
-          name='name'
-          onChange={handleChange}
-        />
-        
-        <input
-          value={story.story}
-          name='story'
-          onChange={handleChange}
-        />
-        
-        <button type="sumbmit">Save</button>
-      </form>
-      
+          placeholder="Name"
+          name="name"
+          onChange={handleChange} />
 
+        <textarea cols='30'
+          rows='6'
+          maxlength='500'
+          value={story.story}
+          name="story"
+          onChange={handleChange}
+        />
+
+        <button className="save-button"
+          type="sumbmit">SAVE</button>
+      </form>
     </div>
   );
 }

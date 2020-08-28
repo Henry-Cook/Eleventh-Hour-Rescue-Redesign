@@ -9,7 +9,6 @@ export default function ActionCard(props) {
       <h2>{props.action}</h2>
       <h3>{props.subtitle}</h3>
       <p>{props.detail}</p>
-      <button onClick={props.handleClick}>Edit</button>
     </div>
   );
 }
