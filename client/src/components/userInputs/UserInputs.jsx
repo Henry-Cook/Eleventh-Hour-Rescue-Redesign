@@ -24,9 +24,9 @@ function UserInputs(props) {
     }
   };
 
-  // const handlePaypalclick = () => {
-  //   history.push(`#donate-btn`);
-  // };
+  const handlePaypalclick = () => {
+    history.push(`/paypalConfirm`);
+  };
 
   return (
     <>
@@ -37,8 +37,10 @@ function UserInputs(props) {
               className="paypal-radio"
               type="radio"
               value="paypal"
-              onClick={handleRadio}
-              // onMouseDown={() => handlePaypalclick}
+              onClick={(e) => {
+                handleRadio(e);
+                handlePaypalclick();
+              }}
               name="select"
               disabled={disabledRadioBool === true ? true : false}
             />
