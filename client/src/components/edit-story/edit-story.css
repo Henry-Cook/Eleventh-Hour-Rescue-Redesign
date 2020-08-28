@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+.edit-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.edit-story form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-story img {
+  margin: 0 auto;
+  object-fit: cover;
+  max-width: 11.81vw;
+  height: 11.81vw;
+  opacity: .6;
+  border-radius: 180px;
+}
+
+.edit-story input, textarea {
+  font-family: 'Assistant';
+  color: #959595;
+  font-size: 1.3vw;
+  width: 100%;
+  border: none;
+  margin: 3px 0;
+  resize: none;
+}
+
+.story-image-input {
+  padding-bottom: 5%;
+}
+
+.story-name-input {
+  font-weight: bold;
+  color: #83cdf5 !important;
+  text-align: center;
+}
+
+.save-button {
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #fffdfd;
+  background-color: #00a1f8;
+  font-size: 1.3vw;
+  border-radius: 5px;
+  border: none;
+  transition: ease-in-out 0.1s;
+  margin-bottom: 30px;
+}
+
+.save-button:hover {
+  background-color: #1aa9f6;
+}
+
+.save-button:focus {
+  transform: scale(0.95);
+  outline: none;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}

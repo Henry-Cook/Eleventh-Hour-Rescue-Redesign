@@ -1,7 +1,6 @@
 .stories {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 0;
   grid-column-gap: 3.75vw;
 }
 
@@ -12,13 +11,43 @@
 
 .stories img {
   margin: 0 auto;
+  object-fit: cover;
+  max-width: 11.81vw;
+  height: 11.81vw;
+  border-radius: 180px;
 }
 
-#story1 {
+.edit-story-button {
+  background-color: white;
+  border-style: none;
+  padding: 1vw;
+  font-size: 1.2vw;
+  color: #00a1f8;
+  text-decoration: underline;
+  width: 5vw;
+}
+
+.stories button:hover {
+  cursor: pointer;
+}
+
+.edit-story-button:focus {
+  outline: none;
+}
+
+
+#story1, #edit-left, #constant-left, #button1 {
   width: 24.7vw;
   grid-column-start: 1;
+  grid-row-end: 2;
 }
-#story2 {
+
+#story2, #edit-right, #constant-right, #button2 {
   width: 22.2vw;
   grid-column-start: 2;
+  grid-row-end: 2;
+}
+
+#button1, #button2 {
+  grid-row-start: 2;
 }
