@@ -17,11 +17,9 @@ export default function Stories() {
     fetchStories();
   }, []);
 
-
   const handleClick = (buttonID) => {
     setEditForm(buttonID);
   };
-
 
   if (!editForm) {
     return stories.map((story, i) => {
@@ -33,7 +31,8 @@ export default function Stories() {
             action={story.name}
             detail={story.story}
           />
-          <button className="edit-story-button"
+          <button
+            className="edit-story-button"
             id={`button${i + 1}`}
             onClick={(e) => {
               e.preventDefault();
@@ -49,9 +48,7 @@ export default function Stories() {
     return (
       <>
         <div id="edit-left">
-          <EditStory
-            id={stories[0]._id}
-          />
+          <EditStory id={stories[0]._id} />
         </div>
 
         <div id="constant-right">
@@ -77,9 +74,7 @@ export default function Stories() {
         </div>
 
         <div id="edit-right">
-          <EditStory
-            id={stories[1]._id}
-          />
+          <EditStory id={stories[1]._id} />
         </div>
       </>
     );

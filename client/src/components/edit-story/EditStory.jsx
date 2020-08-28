@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from 'react-router-dom'
 import { updateStory, getStory } from "../../services/stories.js";
 import "./edit-story.css";
 
 export default function EditStory(props) {
   const [story, setStory] = useState({});
-
-  const history = useHistory()
 
   useEffect(() => {
     const fetchStory = async () => {
@@ -26,7 +23,7 @@ export default function EditStory(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const id = props.id
+    const id = story._id
     console.log(story)
     console.log(id)
     await updateStory(id, story)
