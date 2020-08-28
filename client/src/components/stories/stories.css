@@ -11,6 +11,10 @@
 
 .stories img {
   margin: 0 auto;
+  object-fit: cover;
+  max-width: 11.81vw;
+  height: 11.81vw;
+  border-radius: 180px;
 }
 
 .edit-story-button {

@@ -20,7 +20,7 @@ export const getStory = async (id, story)  => {
 
 export const updateStory = async (id, story) => {
   try {
-    const response = await api.put(`/story/${id}`)
+    const response = await api.put(`/story/${id}`, story)
     console.log(response.data)
     return response.data;
    
