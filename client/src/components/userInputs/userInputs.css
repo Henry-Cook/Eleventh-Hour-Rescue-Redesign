@@ -147,6 +147,7 @@
   font-family: "Assistant", sans-serif;
   color: #00a1f8;
   margin-bottom: 3px;
+  padding: 0;
 }
 
 .state-select {

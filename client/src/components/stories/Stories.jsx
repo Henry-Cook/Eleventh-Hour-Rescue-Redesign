@@ -25,6 +25,7 @@ export default function Stories(props) {
 
   const updateBool = () => {
     setEdit(true);
+    window.location.reload(true);
   };
 
   if (edit) {
